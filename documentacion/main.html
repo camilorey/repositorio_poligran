@@ -1,0 +1,1963 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.9.2" />
+<title>main API documentation</title>
+<meta name="description" content="" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>main</code></h1>
+</header>
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">from helpers.back_end_controladores_factory import ControladoresFactory
+from backend.queries_especiales import query_grps_esc_facs_proy_id
+from backend.queries_especiales import query_linea_area_todos
+
+import pandas as pd
+from datetime import date
+import dash_uploader as du
+import dash_html_components as html
+from app import app,back
+import dash_bootstrap_components as dbc
+import dash_core_components as dcc
+from dash.dependencies import Input,Output,State
+
+
+control_factory = ControladoresFactory(back)
+&#39;&#39;&#39;
+Fábrica de controladores para este Formulario
+&#39;&#39;&#39;
+
+drop_programa = control_factory.crear_dropdown(nom_tabla=&#39;programa_academico&#39;)
+&#39;&#39;&#39;
+Un Dropdown para crear los programas académicos
+&#39;&#39;&#39;
+back.get_periodo_actual_id()
+&#39;&#39;&#39;
+Cuadra el periodo actual por defecto en el Formulario a 
+partir de la fecha actual.
+&#39;&#39;&#39;
+
+
+drop_proyecto_drop = control_factory.crear_dropdown(nom_tabla=&#39;proyecto&#39;,drop_id =&#39;proyecto-drop-id&#39;)
+&#39;&#39;&#39;
+Dropdown con los nombres de los proyectos de investigación
+&#39;&#39;&#39;
+drop_proyecto = html.Div(id=&#39;drop-proyecto-comp-id&#39;,
+                         children=[html.H2(&#39;Escoja el proyecto para asociar todo en el formulario&#39;),
+                                   drop_proyecto_drop])
+&#39;&#39;&#39;
+HTML Div con los nombres de proyectos disponibles en la DB
+&#39;&#39;&#39;
+drop_periodo_drop = control_factory.crear_dropdown(nom_tabla=&#39;periodo&#39;,drop_id=&#39;periodo-drop-id&#39;)
+&#39;&#39;&#39;
+Dropdown para los periodos disponibles para registrar productos
+&#39;&#39;&#39;
+drop_periodo = html.Div(id=&#39;drop-periodo-comp-id&#39;,
+                         children=[html.H2(&#39;Escoja el periodo al que quiere asociar el proyecto&#39;),
+                                   html.P(&#39;Por defecto se fija en ESTE periodo&#39;),
+                                   drop_periodo_drop])
+&#39;&#39;&#39;
+HTML Div para contener los periodos de productos a registrar.
+&#39;&#39;&#39;
+def print_listado_como_string(valores):
+    &#39;&#39;&#39;
+    Un método auxiliar para escribir una lista como una serie de strings separados por comas.
+    :param valores: (Lista) valores que queremos escribir como cadena de string separados por coma.
+    :return: (String) valores de la lista separados por comas.
+    &#39;&#39;&#39;
+    info = &#39;&#39;
+    for i,val in enumerate(valores):
+        info += val
+        if i &lt; len(valores)-1:
+            info +=&#39;,&#39;
+
+    return info
+
+#-----------------------------------------------------------------------------------------
+#Este es el store para poner la información del proyecto
+#-----------------------------------------------------------------------------------------
+
+@app.callback(Output(&#39;store-info-proyecto&#39;,&#39;data&#39;),
+              Input(&#39;proyecto-drop-id&#39;,&#39;value&#39;))
+def get_info_proyecto(proyecto_id):
+    &#39;&#39;&#39;
+    Callback para traer la información asociada a un proyecto: Facultades, EScuelas y programas académicos
+    relacionados con él.
+    :param proyecto_id: ID Del proyecto en la Base de Datos
+    :return: Tabla de la Base de Datos en Formato JSON (orientada a registros)
+    &#39;&#39;&#39;
+    if proyecto_id is not None:
+        query = query_grps_esc_facs_proy_id.replace(&#39;&lt;proy_id&gt;&#39;,str(proyecto_id))
+        df = back.hacer_query(query)
+        return df.to_json(orient=&#39;records&#39;)
+
+#-----------------------------------------------------------------------------------------
+#Estos son los bloques de texto que muestran la información de escuelas y facultades
+#-----------------------------------------------------------------------------------------
+@app.callback(Output(&#39;texto-facultades-id&#39;,&#39;children&#39;),
+              Input(&#39;store-info-proyecto&#39;,&#39;data&#39;))
+def actualizar_info_facultades(data_json):
+    &#39;&#39;&#39;
+    Método para actualizar la lista de Facultades dependiendo del contenido del
+    DataStore del proyecto
+    :param data_json: Información de Facultades, Escuelas y programas académicos como JSON
+    :return: Div HTML con la lista de las Facultades involucradas con un proyecto de investigación.
+    &#39;&#39;&#39;
+    if data_json is None:
+        return [html.H4(&#39;Facultades (No hay selección)&#39;)]
+    else:
+        df = pd.read_json(data_json)
+        facs = df[[&#39;facultad&#39;]].drop_duplicates()
+        lista_facs = []
+        for idx,fac in facs.iterrows():
+            fac_item = html.Li(fac[&#39;facultad&#39;])
+            lista_facs.append(fac_item)
+
+        return html.Div(children=[html.H4(&#39;Facultades&#39;),
+                                  html.Ul(children=lista_facs)])
+
+@app.callback(Output(&#39;texto-escuelas-id&#39;,&#39;children&#39;),
+              Input(&#39;store-info-proyecto&#39;,&#39;data&#39;))
+def actualizar_info_escuelas(data_json):
+    &#39;&#39;&#39;
+    ESte método actualiza la información de las escuelas relacionadas con un proyecto
+    de investigación.
+    :param data_json: Información de Facultades, Escuelas y programas académicos como JSON
+    :return: Div HTML con la información de las escuelas asociadas a este proyecto.
+    &#39;&#39;&#39;
+    if data_json is None:
+        return [html.H4(&#39;Escuelas (No hay selección)&#39;)]
+    else:
+        df = pd.read_json(data_json)
+        facs = df[[&#39;escuela&#39;]].drop_duplicates()
+        lista_facs = []
+        for idx,fac in facs.iterrows():
+            fac_item = html.Li(fac[&#39;escuela&#39;])
+            lista_facs.append(fac_item)
+
+        return html.Div(children=[html.H4(&#39;Escuelas&#39;),
+                                  html.Ul(children=lista_facs)])
+
+@app.callback(Output(&#39;texto-grupos-id&#39;,&#39;children&#39;),
+              Input(&#39;store-info-proyecto&#39;,&#39;data&#39;))
+def actualizar_info_grupos(data_json):
+    &#39;&#39;&#39;
+    Extrae la información de los grupos de investigación asociados a un proyecto
+    desde el DataStore de Facultades, EScuelas, PRogramas y Gurpos de investigación
+    :param data_json: Información de Facultades, Escuelas y programas académicos como JSON
+    :return: HTML Div con la información de los Grupos de Investigación asociados a un proyecto.
+    &#39;&#39;&#39;
+    if data_json is None:
+        return [html.H4(&#39;Grupos (No hay selección)&#39;)]
+    else:
+        df = pd.read_json(data_json)
+        facs = df[[&#39;grupo&#39;]].drop_duplicates()
+        lista_facs = []
+        for idx,fac in facs.iterrows():
+            fac_item = html.Li(fac[&#39;grupo&#39;])
+            lista_facs.append(fac_item)
+
+        return html.Div(children=[html.H4(&#39;Grupos&#39;),
+                                  html.Ul(children=lista_facs)])
+
+@app.callback(Output(&#39;texto-fechas-id&#39;,&#39;children&#39;),
+              Input(&#39;proyecto-drop-id&#39;,&#39;value&#39;))
+def actualizar_fechas_proyecto(proyecto_id):
+    &#39;&#39;&#39;
+    Informa sobre las fechas de inicio y fin de un proyecto (cuando hay) asociadas a un proyecto
+    de investigación seleccionado.
+    :param proyecto_id: ID En la Base de Datos del proyecto de investigación.
+    :return: Div HTML con la información de fechas de inicio y fin y estado del proyecto (En Curso/Finalizado).
+    &#39;&#39;&#39;
+    fecha_ini = &#39;NO SE HA ESCOGIDO&#39;
+    fecha_cie = &#39;-&#39;
+    estado = &#39;EN CURSO&#39;
+    if proyecto_id is not None:
+        fecha_ini,fecha_cierre = back.get_fechas_proyecto(proyecto_id)
+        fecha_ini = str(fecha_ini)
+        if fecha_cierre is not None:
+            fecha_cie = str(fecha_cie)
+            estado = &#39;FINALIZADO&#39;
+    inicio_fin =[html.Li(&#34;Inicio del Proyecto: &#34;+fecha_ini)]
+    inicio_fin.append(html.Li(&#34;Fin del proyecto: &#34;+fecha_cie))
+    inicio_fin.append(html.Li(&#34;Estado del proyecto: &#34;+estado))
+    return html.Div(children=[html.H4(&#34;Fechas importantes del proyecto&#34;),
+                              html.Ul(children=inicio_fin)])
+
+@app.callback(Output(&#39;periodo-drop-id&#39;,&#39;value&#39;),
+              Input(&#39;proyecto-drop-id&#39;,&#39;value&#39;))
+def poner_periodo_actual(proyecto_id):
+    &#39;&#39;&#39;
+    Actualiza la fecha del periodo para poner por defecto el periodo actual
+    dependiendo de la fecha en curso.
+    :param proyecto_id: ID del proyecto en el Formulario
+    :return: ID Del periodo actual.
+    &#39;&#39;&#39;
+    per_actual = back.get_periodo_actual_id()
+    return per_actual
+#-----------------------------------------------------------------------------------------
+#Este es el drop para asociar programas académicos
+#-----------------------------------------------------------------------------------------
+programas = back.get_programas_academicos()
+&#39;&#39;&#39;
+Trae la lista de programas académicos registrada en la Base de Datos
+&#39;&#39;&#39;
+ops = []
+for idx,prog in programas.iterrows():
+    prog_id = prog[&#39;programa_academico_id&#39;]
+    prog_nombre = prog[&#39;programa_academico&#39;]
+    ops.append({&#39;label&#39;:prog_nombre,&#39;value&#39;:prog_id})
+
+programas_drop = dcc.Dropdown(id=&#39;drop-programas-proyecto-id&#39;,
+                             options = ops,
+                             multi=True)
+&#39;&#39;&#39;
+Pone por defecto en el Dropdown TODOS los programas académicos en la DB. 
+&#39;&#39;&#39;
+@app.callback(Output(&#39;drop-programas-proyecto-id&#39;,&#39;value&#39;),
+              Input(&#39;store-info-proyecto&#39;,&#39;data&#39;))
+def actualizar_info_programas(data_json):
+    &#39;&#39;&#39;
+    Pone por defecto todos los programas académicos relacionados con el proyecto
+    seleccionado como seleccionado en el Dropdown de Programas académicos.
+    :param data_json: Información de Facultades, Escuelas y programas académicos como JSON
+    :return: Lista con los IDs de los programas académicos relacionados con el proyecto.
+    &#39;&#39;&#39;
+    if data_json is None:
+        return []
+    else:
+        df = pd.read_json(data_json)
+        escuelas = list(df[&#39;escuela_id&#39;].unique())
+        progs_seleccionados = programas.loc[programas[&#39;escuela_id&#39;].isin(escuelas)]
+        return list(progs_seleccionados[&#39;programa_academico_id&#39;].unique())
+
+#-----------------------------------------------------------------------------------------
+#Vamos a poner un text area para poner el nombre del producto
+#-----------------------------------------------------------------------------------------
+input_nom_producto = dcc.Textarea(id=&#39;nom-producto-input-id&#39;,
+                                   value=&#39;Ingrese el nombre de su producto&#39;,
+                                  style={&#34;width&#34;:&#34;100%&#34;,&#34;height&#34;:&#34;200&#34;})
+&#39;&#39;&#39;
+TextArea para poner el nombre del producto académico
+&#39;&#39;&#39;
+nom_producto = html.Div(id=&#39;nom-producto-id&#39;,
+                        children=[html.H4(&#34;Ingrese el nombre del producto&#34;),
+                                  input_nom_producto])
+&#39;&#39;&#39;
+Div HTML para poner el nombre del producto 
+&#39;&#39;&#39;
+input_cod_cvlac = dcc.Textarea(id=&#39;cod-cvlac-input-id&#39;,
+                               style={&#34;width&#34;:&#34;100%&#34;})
+&#39;&#39;&#39;
+TextArea para poner el código CVLac (como String)
+&#39;&#39;&#39;
+cod_cvlac = html.Div(id=&#39;cod-cvlac-id&#39;,
+                     children=[html.H4(&#34;Ingrese el Código CVLac de su producto&#34;),
+                               input_cod_cvlac])
+&#39;&#39;&#39;
+Div HTML para poner el código CVLac del producto.
+&#39;&#39;&#39;
+input_cod_investigacion = dcc.Textarea(id=&#39;cod-investigacion-input-id&#39;,
+                                    style={&#39;width&#39;:&#39;100%&#39;})
+&#39;&#39;&#39;
+TextArea del Código que pone el departamento de investigación (como String)
+&#39;&#39;&#39;
+cod_investigacion = html.Div(id=&#39;cod-investigacion-id&#39;,
+                             children=[html.H4(&#34;Ingrese Código del Departamento de Investigación&#34;),
+                                       input_cod_investigacion])
+&#39;&#39;&#39;
+Div HTML para contener la caja de texto para el código que aporta el departamento de investigación.
+&#39;&#39;&#39;
+input_num_convocatoria = dcc.Textarea(id=&#39;num-convocatoria-input-id&#39;,
+                                      style={&#34;width&#34;:&#34;100%&#34;})
+&#39;&#39;&#39;
+TextArea para poner el número de la convocatoria a la cual pertenece el producto
+&#39;&#39;&#39;
+num_convocatoria = html.Div(id=&#39;num-convocatoria-id&#39;,
+                            children=[html.H4(&#34;Ingrese número de la convocatoria&#34;),
+                                      input_num_convocatoria])
+&#39;&#39;&#39;
+Div HTML conteniendo la caja de texto para poner el número de la convocatoria.
+&#39;&#39;&#39;
+
+fecha_convocatoria = dcc.DatePickerSingle(
+        id=&#39;fecha-convocatoria-input-id&#39;,
+        min_date_allowed=date(1995, 8, 5),
+        initial_visible_month=date(2017, 8, 5),
+        date=date.today(),
+        style={&#34;width&#34;:&#34;100%&#34;})
+&#39;&#39;&#39;
+DatePicker para escoger la fecha de convocatoria.
+&#39;&#39;&#39;
+fecha_convocatoria = html.Div(id=&#39;fecha-convocatoria-id&#39;,
+                              children=[html.H4(&#34;Ingrese la Fecha de Convocatoria&#34;),
+                                        fecha_convocatoria])
+&#39;&#39;&#39;
+Div HTML que contiene el Calendario para poder escoger la Fecha de Convocatoria
+&#39;&#39;&#39;
+paises = back.get_paises()
+&#39;&#39;&#39;
+Lista de países registrada en la Base de Datos
+&#39;&#39;&#39;
+ops_paises = []
+
+id_colombia = 157
+for idx, pais in paises.iterrows():
+    clase_id = pais[&#39;pais_id&#39;]
+    clase_nombre = pais[&#39;pais&#39;]
+    if clase_nombre == &#39;COLOMBIA&#39;:
+        id_colombia = clase_id
+    ops_paises.append({&#39;label&#39;: clase_nombre, &#39;value&#39;: clase_id})
+pais_drop = dcc.Dropdown(id=&#39;pais-drop-id&#39;,
+                         options=ops_paises,
+                         multi=True,
+                         value=id_colombia)
+pais = html.Div(id=&#39;pais-id&#39;,
+                children=[html.H4(&#34;Ingrese el país de la convocatoria&#34;),
+                          pais_drop])
+&#39;&#39;&#39;
+Div HTML con el DropDown para escoger uno o más países y asociarlos al producto a 
+registrar.
+&#39;&#39;&#39;
+componente_campos =[dbc.Row(dbc.Col(nom_producto,width=12),no_gutters=True)]
+&#39;&#39;&#39;
+Componente para poder acomodar el nombre del producto en el Formulario.
+&#39;&#39;&#39;
+#-----------------------------------------------------------------------------------------
+#Vamos a poner una caja de diálogo para las clases de productos
+#-----------------------------------------------------------------------------------------
+clase_productos = back.get_clase_producto()
+&#39;&#39;&#39;
+Lista de clases de producto en la DB.
+&#39;&#39;&#39;
+ops = []
+for idx,clase in clase_productos.iterrows():
+    clase_id = clase[&#39;clase_producto_id&#39;]
+    clase_nombre = clase[&#39;clase_producto&#39;]
+    ops.append({&#39;label&#39;:clase_nombre,&#39;value&#39;:clase_id})
+
+
+clase_producto = html.Div([html.H4(&#34;Escoja una clase de producto&#34;),
+                           dcc.Dropdown(id=&#39;clase-producto-id&#39;,
+                                        placeholder=&#39;Escoja una clase de producto&#39;,
+                                        options=ops)])
+&#39;&#39;&#39;
+Div HTML con las clases de productos disponibles. 
+&#39;&#39;&#39;
+tipo_producto = html.Div([html.H4(&#34;Escoja el tipo producto&#34;),
+                           dcc.Dropdown(id=&#39;tipo-producto-drop-id&#39;,
+                                        placeholder=&#39;Escoja primero una clase de producto&#39;)])
+&#39;&#39;&#39;
+Div HTML con el Dropdown de los tipos de producto disponibles (se actualizará dependiendo de la Clase). 
+&#39;&#39;&#39;
+@app.callback(Output(&#39;tipo-producto-drop-id&#39;,&#39;options&#39;),
+              Input(&#39;clase-producto-id&#39;,&#39;value&#39;))
+def actualizar_tipo_producto(clase_prod):
+    &#39;&#39;&#39;
+    Método para actualizar las opciones del Dropdown de Tipo de Producto dependiendo
+    de la escogencia de la clase de producto.
+    :param clase_prod: Clase de Producto ID.
+    :return: Lista de Diccionarios para acomodar el Dropdown de Tipos de Producto.
+    &#39;&#39;&#39;
+    if clase_prod is None:
+        return []
+    clase_productos = back.get_tipo_producto(clase_prod)
+    ops=[]
+    for idx, clase in clase_productos.iterrows():
+        clase_id = clase[&#39;tipo_producto_id&#39;]
+        clase_nombre = clase[&#39;tipo_producto&#39;]
+        ops.append({&#39;label&#39;: clase_nombre, &#39;value&#39;: clase_id})
+    return ops
+
+#-----------------------------------------------------------------------------------------
+#Vamos a poner una caja para las personas
+#-----------------------------------------------------------------------------------------
+personas_drop = dcc.Dropdown(id=&#39;personas-drop-id&#39;)
+&#39;&#39;&#39;
+Dropdown que permitirá escoger personas para asociarlas a productos como autores. 
+&#39;&#39;&#39;
+#drop para escoger personas que ya están en la DB
+personas = back.get_personas()
+&#39;&#39;&#39;
+Lista de todas las personas en la Base de Datos
+&#39;&#39;&#39;
+ops = []
+for idx,persona in personas.iterrows():
+    clase_id = persona[&#39;persona_id&#39;]
+    clase_nombre = persona[&#39;persona&#39;]
+    ops.append({&#39;label&#39;:clase_nombre,&#39;value&#39;:clase_id})
+personas_drop = dcc.Dropdown(id=&#39;personas-drop-id&#39;,
+                             options=ops,
+                             multi=True)
+&#39;&#39;&#39;
+Dropdown con todas las personas registradas en la Base de Datos.
+&#39;&#39;&#39;
+#-----------------------------------------------------------------------------------------
+#Vamos a poner una caja para poner las personas asociadas al proyecto
+#-----------------------------------------------------------------------------------------
+campo_cedula = html.Div(id=&#39;nueva-cedula-id&#39;,
+                        children=[html.H5(&#39;Identificacion de la persona&#39;),
+                                  dcc.Input(id=&#39;nueva-cedula-field-id&#39;)])
+&#39;&#39;&#39;
+Div con el TextField para ingresar el documento de una nueva persona. 
+Puede ponerse cédula, cédula de extranjería o pasaporte. 
+&#39;&#39;&#39;
+campo_nombre = html.Div(id=&#39;nuevo-nombre-id&#39;,
+                        children=[html.H5(&#39;Nombre y Apellidos de la persona&#39;),
+                                  dcc.Input(id=&#39;nuevo-nombre-field-id&#39;)])
+&#39;&#39;&#39;
+Div HTML con el TextField para poner el nombre y apellidos de la persona 
+a inscribir en la DB. 
+&#39;&#39;&#39;
+ops_tipo_persona = [{&#34;label&#34;:&#39;EXTERNO&#39;,&#34;value&#34;:&#34;EXTERNO&#34;},
+                    {&#34;label&#34;:&#39;ESTUDIANTE&#39;,&#34;value&#34;:&#34;ESTUDIANTE&#34;},
+                    {&#34;label&#34;:&#39;DOCENTE&#39;,&#34;value&#34;:&#34;DOCENTE&#34;},]
+&#39;&#39;&#39;
+Tipos de persona: Docente, Estudiante, Externo que podemos relacionar
+&#39;&#39;&#39;
+campo_tipo = html.Div(id=&#39;nuevo-tipo-id&#39;,
+                      children=[html.H5(&#39;Tipo de la persona&#39;),
+                                dcc.Checklist(id=&#39;tipo-nueva-persona-check-id&#39;,
+                                              options=ops_tipo_persona)])
+&#39;&#39;&#39;
+Checklist para poder agregar nuevas personas a la DB. 
+&#39;&#39;&#39;
+boton_agregar_persona = html.Div(html.Button(&#39;Agregar Persona&#39;,
+                                             id=&#39;agregar-persona-boton-id&#39;,
+                                             style={&#39;backgroundColor&#39;: &#39;#111100&#39;,
+                                                    &#39;color&#39;: &#39;white&#39;,
+                                                    &#39;width&#39;: &#39;100%&#39;,
+                                                    &#39;border&#39;: &#39;1.5px black solid&#39;,
+                                                    &#39;height&#39;: &#39;50px&#39;,
+                                                    &#39;text-align&#39;: &#39;center&#39;,
+                                                    &#39;marginLeft&#39;: &#39;20px&#39;,
+                                                    &#39;marginTop&#39;: 20}))
+&#39;&#39;&#39;
+Botón que usaremos para agregar una nueva persona (Autor) a la DB. 
+&#39;&#39;&#39;
+nueva_persona_div = html.Div([html.H4(&#39;Agregar nueva persona&#39;),
+                         html.P(&#39;Puede poner cédula de ciudadanía, de extranjería o pasaporte&#39;),
+                         dbc.Row([dbc.Col(campo_cedula,width=12),
+                                  dbc.Col(campo_nombre,width=12),
+                                  dbc.Col(campo_tipo,width=12),
+                                  dbc.Col(boton_agregar_persona,width=12),
+                                  dbc.Col(html.Div(id=&#39;persona-agregada-id&#39;),width=12)],
+                                 no_gutters=True)
+                              ])
+&#39;&#39;&#39;
+Sección del formulario (como Div HTML) dedicada a agregar una nueva persona
+a la Base de Datos.  
+&#39;&#39;&#39;
+@app.callback(Output(&#39;persona-agregada-id&#39;,&#39;children&#39;),
+              Input(&#39;agregar-persona-boton-id&#39;,&#39;n_clicks&#39;),
+              State(&#39;nueva-cedula-field-id&#39;,&#39;value&#39;),
+              State(&#39;nuevo-nombre-field-id&#39;,&#39;value&#39;),
+              State(&#39;tipo-nueva-persona-check-id&#39;,&#39;value&#39;))
+def agregar_persona_boton(n_clicks,persona_id,persona_nombre,tipos):
+    &#39;&#39;&#39;
+    Método para agregar una nueva persona a la Base de Datos después de haber llenado los campos
+    necesarios y a través del botón de agregar persona.
+    :param n_clicks: Número de clicks en el botón (no es importante).
+    :param persona_id: Identificador de la persona (cc,ce, pasaporte).
+    :param persona_nombre: Nombres y apellidos de la persona.
+    :param tipos: lista con los tipos asociados a la persona
+    :return: Información de si se pudo agregar a la persona (&#34;persona agregada&#34;) o
+    si faltan campos por llenar.
+    &#39;&#39;&#39;
+    if persona_id is not None and persona_nombre is not None and tipos is not None:
+        if len(tipos)==0:
+            return &#34;falta poner por lo menos un tipo de persona&#34;
+        else:
+            persona_nombre = persona_nombre.upper()
+            back.agregar_persona(persona_id,persona_nombre,tipos)
+            return &#34;persona agregada&#34;
+    else:
+        return &#34;Faltan campos por llenar&#34;
+
+@app.callback(Output(&#39;personas-drop-id&#39;,&#39;value&#39;),
+              Input(&#39;agregar-persona-boton-id&#39;,&#39;n_clicks&#39;),
+              State(&#39;nueva-cedula-field-id&#39;,&#39;value&#39;),
+              State(&#39;nuevo-nombre-field-id&#39;,&#39;value&#39;),
+              State(&#39;personas-drop-id&#39;,&#39;value&#39;))
+def agregar_persona_lista(n_clicks,persona_id,persona_nombre,personas_selec):
+    &#39;&#39;&#39;
+    Este método agrega la nueva persona a la lista de personas y a los seleccionados por defecto.
+    (No está funcionando muy bien en este momento).
+    :param n_clicks: Numero de clicks en el botón de agregar persona.
+    :param persona_id: identificador de la persona (cc,ce, pasaporte) de la persona en la DB.
+    :param persona_nombre: nombre de la persona para mostrar en la selección.
+    :param personas_selec: selección actual en la caja de de personas.
+    :return: Lista de identificadores de las personas con la nueva persona agregada.
+    &#39;&#39;&#39;
+    if personas_selec is None:
+        return [{&#34;label&#34;:persona_id,&#39;value&#39;:persona_id}]
+    else:
+        nuevas = personas_selec.append({&#34;label&#34;:persona,&#39;value&#39;:persona_id})
+        return nuevas
+
+
+@app.callback(Output(&#39;personas-drop-id&#39;,&#39;options&#39;),
+              Input(&#39;agregar-persona-boton-id&#39;,&#39;n_clicks&#39;))
+def actualizar_personas_lista(n_clicks):
+    &#39;&#39;&#39;
+    Método para mostrar la lista de personas de la base de datos.
+    :param n_clicks: Número de clicks en el botón de agregar persona (no se usa)
+    :return: Lista de diccionarios con todas las personas en la Base de Datos.
+    &#39;&#39;&#39;
+    personas = back.get_personas()
+    ops = []
+    for idx, persona in personas.iterrows():
+        clase_id = persona[&#39;persona_id&#39;]
+        clase_nombre = persona[&#39;persona&#39;]
+        ops.append({&#39;label&#39;: clase_nombre, &#39;value&#39;: clase_id})
+    return ops
+
+personas = html.Div(id=&#39;info-personas-id&#39;,
+                         children=[html.H4(&#34;Personas relacionadas al proyecto&#34;),
+                                   personas_drop,
+                                   nueva_persona_div])
+#-----------------------------------------------------------------------------------------
+#Vamos a poner una caja para las áreas y líneas
+#-----------------------------------------------------------------------------------------
+areas_lineas_total = back.hacer_query(query_linea_area_todos)
+&#39;&#39;&#39;
+DataFrame con las áreas y líneas de investigación en la DB para filtrar. 
+&#39;&#39;&#39;
+ops_areas = []
+ops_lineas = []
+areas_total = areas_lineas_total[[&#39;area_id&#39;,&#39;area&#39;]].drop_duplicates()
+for idx, area in areas_total.iterrows():
+    clase_id = area[&#39;area_id&#39;]
+    clase_nombre = area[&#39;area&#39;]
+    ops_areas.append({&#39;label&#39;: clase_nombre, &#39;value&#39;: clase_id})
+
+lineas_total = areas_lineas_total[[&#39;linea_id&#39;,&#39;linea&#39;]].drop_duplicates()
+for idx, linea in lineas_total.iterrows():
+    clase_id = linea[&#39;linea_id&#39;]
+    clase_nombre = linea[&#39;linea&#39;]
+    ops_lineas.append({&#39;label&#39;: clase_nombre, &#39;value&#39;: clase_id})
+
+areas_drop = dcc.Dropdown(id=&#39;areas-drop-id&#39;,
+                          multi=True)
+&#39;&#39;&#39;
+Dropdown con las áreas de investigación disponibles de toda la DB.
+&#39;&#39;&#39;
+lineas_drop = dcc.Dropdown(id=&#39;lineas-drop-id&#39;,
+                           multi=True)
+&#39;&#39;&#39;
+Líneas de investigación disponibles. 
+&#39;&#39;&#39;
+@app.callback(Output(&#39;areas-drop-id&#39;,&#39;options&#39;),
+              Input(&#39;proyecto-drop-id&#39;,&#39;value&#39;))
+def set_areas_proyecto_drop(proyecto_id):
+    &#39;&#39;&#39;
+    Ajusta las áreas de investigación de los grupos a los cuales pertenece el proyecto.
+    :param proyecto_id: ID del proyecto.
+    :return: Lista de Diccionarios con las áreas asociadas a un proyecto de investigación.
+    &#39;&#39;&#39;
+    if proyecto_id is not None:
+        areas_y_lineas = back.get_lineas_y_areas_de_proyecto(proyecto_id)
+        areas = areas_y_lineas[[&#39;area_id&#39;,&#39;area&#39;]].drop_duplicates()
+        ops = []
+        for idx, area in areas.iterrows():
+            clase_id = area[&#39;area_id&#39;]
+            clase_nombre = area[&#39;area&#39;]
+            ops.append({&#39;label&#39;: clase_nombre, &#39;value&#39;: clase_id})
+        return ops
+    else:
+        return ops_areas
+
+@app.callback(Output(&#39;lineas-drop-id&#39;,&#39;options&#39;),
+              Input(&#39;proyecto-drop-id&#39;,&#39;value&#39;),
+              Input(&#39;areas-drop-id&#39;,&#39;value&#39;))
+def set_lineas_proyecto_drop(proyecto_id,areas):
+    &#39;&#39;&#39;
+    Ajusta las opciones del Dropdown con las líneas de investigación asociadas a un proyecto
+    dependiendo de las áreas escogidas.
+    :param proyecto_id: ID del proyecto en curso.
+    :param areas: lista con los IDs de las áreas de investigación.
+    :return: Lista de Diccionarios con las opciones de las líneas de investigación de las áreas asociadas
+    al proyecto con ID proyecto_id.
+    &#39;&#39;&#39;
+    if proyecto_id is None and areas is None:
+        return ops_lineas
+    elif areas is not None and proyecto_id is None:
+        sub_lineas = areas_lineas_total.loc[areas_lineas_total[&#39;area_id&#39;].isin(areas)]
+        ops_sub_lineas = []
+        for idx, linea in sub_lineas.iterrows():
+            clase_id = linea[&#39;linea_id&#39;]
+            clase_nombre = linea[&#39;linea&#39;]
+            ops_sub_lineas.append({&#39;label&#39;: clase_nombre, &#39;value&#39;: clase_id})
+        return ops_sub_lineas
+    else:
+        areas_y_lineas = back.get_lineas_y_areas_de_proyecto(proyecto_id)
+        lineas = areas_y_lineas[[&#39;linea_id&#39;, &#39;linea&#39;]].drop_duplicates()
+        ops = []
+        for idx, linea in lineas.iterrows():
+            clase_id = linea[&#39;linea_id&#39;]
+            clase_nombre = linea[&#39;linea&#39;]
+            ops.append({&#39;label&#39;: clase_nombre, &#39;value&#39;: clase_id})
+        return ops
+
+    if proyecto_id is not None and areas is not None:
+        areas_y_lineas = back.get_lineas_y_areas_de_proyecto(proyecto_id)
+        areas = areas_y_lineas[[&#39;area_id&#39;,&#39;area&#39;]]
+        lineas = areas_y_lineas[[&#39;linea_id&#39;,&#39;linea&#39;,&#39;area_id&#39;]].drop_duplicates()
+        ops = []
+        for idx, linea in lineas.iterrows():
+            clase_id = linea[&#39;linea_id&#39;]
+            clase_nombre = linea[&#39;linea&#39;]
+            area_id = linea[&#39;area_id&#39;]
+            if area_id in areas:
+                ops.append({&#39;label&#39;: clase_nombre, &#39;value&#39;: clase_id})
+        return ops
+
+instis = back.get_instituciones()
+&#39;&#39;&#39;
+Trae toda la lista de instituciones disponibles en la DB. 
+&#39;&#39;&#39;
+ops = []
+for idx, insti in instis.iterrows():
+        clase_id = insti[&#39;instituciones_id&#39;]
+        clase_nombre = insti[&#39;instituciones&#39;]
+        ops.append({&#39;label&#39;: clase_nombre, &#39;value&#39;: clase_id})
+
+instituciones_drop = dcc.Dropdown(id=&#39;instituciones-drop-id&#39;,
+                                  options=ops,
+                                  multi=True)
+&#39;&#39;&#39;
+Dropdown con las instituciones disponibles en la Base de Datos
+&#39;&#39;&#39;
+campo_nom_institucion = html.Div(id=&#39;nombre-nueva-institucion-id&#39;,
+                        children=[html.H5(&#39;Nombre de la Institución&#39;),
+                                  dcc.Input(id=&#39;nueva-institucion-input-id&#39;)])
+&#39;&#39;&#39;
+Div HTML con todas las instituciones para asociar a un producto. 
+&#39;&#39;&#39;
+boton_agregar_institucion = html.Div(html.Button(&#39;Agregar Institución&#39;,
+                                             id=&#39;agregar-institucion-boton-id&#39;,
+                                             style={&#39;backgroundColor&#39;: &#39;#111100&#39;,
+                                                    &#39;color&#39;: &#39;white&#39;,
+                                                    &#39;width&#39;: &#39;100%&#39;,
+                                                    &#39;border&#39;: &#39;1.5px black solid&#39;,
+                                                    &#39;height&#39;: &#39;50px&#39;,
+                                                    &#39;text-align&#39;: &#39;center&#39;,
+                                                    &#39;marginLeft&#39;: &#39;20px&#39;,
+                                                    &#39;marginTop&#39;: 20}))
+&#39;&#39;&#39;
+Botón para agregar una nueva institución a la Base de Datos.
+&#39;&#39;&#39;
+nueva_institucion_div = html.Div([html.H4(&#39;Agregar nueva Institución&#39;),
+                         html.P(&#39;Puede poner nombre de la institucion&#39;),
+                         dbc.Row([dbc.Col(campo_nom_institucion,width=12),
+                                  dbc.Col(boton_agregar_institucion,width=12),
+                                  dbc.Col(html.Div(id=&#39;institucion-agregada-id&#39;),width=12)],
+                                 no_gutters=True)
+                              ])
+instituciones = html.Div(id=&#39;info-instituciones-id&#39;,
+                    children=[html.H4(&#34;Instituciones relacionadas&#34;),
+                              instituciones_drop,
+                              nueva_institucion_div])
+
+@app.callback(Output(&#39;institucion-agregada-id&#39;,&#39;children&#39;),
+              Input(&#39;agregar-institucion-boton-id&#39;, &#39;n_clicks&#39;),
+              State(&#39;nueva-institucion-input-id&#39;, &#39;value&#39;))
+def agregar_nueva_institucion(n_clicks,nom_institucion):
+    &#39;&#39;&#39;
+    Acción asociada a agregar una nueva institución a la Base de Datos
+    :param n_clicks: número de clicks en el botón (no se usa).
+    :param nom_institucion: nombre de la institución a agregar viene de la caja de texto.
+    :return: Información acerca de si se agregó la institución o no.
+    &#39;&#39;&#39;
+    if nom_institucion is not None:
+        back.agregar_nueva_institucion(nom_institucion.upper())
+        return &#34;Nueva institución agregada, refresque&#34;
+    else:
+        return &#34;no se ha agregado ninguna institución&#34;
+
+@app.callback(Output(&#39;instituciones-drop-id&#39;,&#39;options&#39;),
+              Input(&#39;agregar-institucion-boton-id&#39;, &#39;n_clicks&#39;))
+def actualizar_instituciones(n_clicks):
+    &#39;&#39;&#39;
+    Actualiza la lista de instituciones para poner y seleccionar la institución recién puesta
+    (no funciona bien).
+    :param n_clicks: Numero de clicks del botón.
+    :return: Lista de diccionarios con las instituciones actualizada
+    &#39;&#39;&#39;
+    instis = back.get_instituciones()
+    ops = []
+    for idx, insti in instis.iterrows():
+        clase_id = insti[&#39;instituciones_id&#39;]
+        clase_nombre = insti[&#39;instituciones&#39;]
+        ops.append({&#39;label&#39;: clase_nombre, &#39;value&#39;: clase_id})
+
+
+areas_y_lineas = html.Div(id=&#39;areas-y-lineas-id&#39;,
+                          children=[html.H4(&#34;Áreas y Líneas de investigación&#34;),
+                                    html.Div(children=[html.H5(&#39;Áreas de Investigación&#39;),
+                                                       areas_drop]),
+                                    html.Div(children=[html.H5(&#39;Líneas de Investigación&#39;),
+                                                       lineas_drop]),
+                                    html.Div(children=[html.H5(&#39;Instituciones asociadas&#39;),
+                                                       instituciones])])
+
+#-----------------------------------------------------------------------------------------
+#Vamos a poner una caja de diálogo para subir el archivo
+#-----------------------------------------------------------------------------------------
+tipos_archivo_permitidos = [&#39;rar&#39;,&#39;zip&#39;,&#39;doc&#39;,&#39;docx&#39;,&#39;xls&#39;,&#39;xlsx&#39;,
+                            &#39;pdf&#39;,&#39;tex&#39;,&#39;png&#39;,&#39;jpg&#39;]
+&#39;&#39;&#39;
+Tipos de archivos aceptados por el momento: RAR, ZIP, DOC,DOCX,XLS,XLSX,PDF,TEX,PNG,JPG.
+&#39;&#39;&#39;
+UPLOAD_FOLDER = r&#34;C:\Users\camil\Documents\repositorio_proyecto_dash\static\uploads&#34;
+&#39;&#39;&#39;
+Ruta actual donde se van a guardar los archivos en carpetas separadas
+&#39;&#39;&#39;
+du.configure_upload(app, UPLOAD_FOLDER)
+upload_archivo_uploadbox = du.Upload(upload_id=&#39;upload-data-id&#39;,
+                                     text=&#39;Arrastre y suelte sus archivos aquí&#39;,
+                                     text_completed=&#39;Completado:&#39;,
+                                     pause_button=False,
+                                     cancel_button=True,
+                                     max_file_size=200, #200MB en tamaños,
+                                     filetypes=tipos_archivo_permitidos)
+upload_archivos_div = html.Div(upload_archivo_uploadbox,
+                               style={&#39;textAlign&#39;: &#39;center&#39;,&#39;width&#39;: &#39;100%&#39;,
+                                      &#39;padding&#39;: &#39;10px&#39;,&#39;display&#39;: &#39;inline-block&#39;})
+&#39;&#39;&#39;Div con la caja para subir uno o más archivos.&#39;&#39;&#39;
+confirmacion_archivo_subido = html.Div(id=&#39;confirmacion-dialogo-id&#39;)
+upload_archivo = html.Div(id=&#39;upload-archivo&#39;,
+                          children=[html.H4(&#34;Subir archivos al repositorio&#34;),
+                                    upload_archivos_div,
+                                    confirmacion_archivo_subido])
+
+@app.callback(Output(&#39;confirmacion-dialogo-id&#39;,&#39;children&#39;),
+              Input(&#39;upload-data-id&#39;,&#39;isCompleted&#39;),
+              State(&#39;upload-data-id&#39;,&#39;fileNames&#39;))
+def imprimir_confirmacion(completo,nom_archivos):
+    &#39;&#39;&#39;
+    Imprime la confirmación de los archivos subidos al repo.
+    :param completo: Informa si ya se completó el upload.
+    :param nom_archivos: lista con los nombres de los archivos subidos.
+    :return: Div HTML con la información de los archivos subidos y su ubicación.
+    &#39;&#39;&#39;
+    if nom_archivos is not None:
+        out = []
+        for archivo in nom_archivos:
+            #file = Path(UPLOAD_FOLDER) / archivo
+            out.append(archivo)
+        return html.Ul([html.Li(str(x)) for x in out])
+    else:
+        return html.Ul(html.Li(&#34;Ningún archivo para subir!&#34;))
+
+#-----------------------------------------------------------------------------------------
+#Ahora ponemos el botón de enviar
+#-----------------------------------------------------------------------------------------
+boton_enviar_comp = html.Button(&#39;Subir al Repositorio&#39;,
+                                id=&#39;boton-subir&#39;,
+                                n_clicks=0,
+                                style={&#39;backgroundColor&#39;: &#39;#111100&#39;,
+                                       &#39;color&#39;:&#39;white&#39;,
+                                       &#39;width&#39;:&#39;100%&#39; ,
+                                       &#39;border&#39;:&#39;1.5px black solid&#39;,
+                                       &#39;height&#39;: &#39;50px&#39;,
+                                       &#39;text-align&#39;:&#39;center&#39;,
+                                       &#39;marginLeft&#39;: &#39;20px&#39;,
+                                       &#39;marginTop&#39;: 20})
+&#39;&#39;&#39;
+botón con el cual se crea una copia del archivo en el Repositorio. 
+&#39;&#39;&#39;
+def generar_informe(nom_producto,cvlac,cod_invest,
+                    num_convo,fecha_conv,paises,
+                    clase,tipo,proy_id,perio_id,personas,instituciones):
+    &#39;&#39;&#39;
+    Método para generar un reporte del registro de productos para mostrar al usuario.
+    :param nom_producto: Nombre del PRoducto (String)
+    :param cvlac: Código CVLac del producto (String)
+    :param cod_invest: Código del Departamento de Investigación (String)
+    :param num_convo: Número de la Convocatoria del producto (String)
+    :param fecha_conv: Fecha registrada de la convocatoria (Date)
+    :param paises: Lista de los IDs de los países al cual queremos asociar este producto
+    :param clase: ID de la clase de producto
+    :param tipo: IDs de los tipos de producto asociados
+    :param proy_id: ID Del proyecto de Investigación.
+    :param perio_id: ID Del periodo al cual queremos registrar este producto
+    :param personas: Lista con los IDs (Documentos de identidad) de los autores
+    :param instituciones: Lista de los IDs de las institucioens asociadas.
+    :return: Div HTML con el reporte de la información del registro.
+    &#39;&#39;&#39;
+    titulo_label = &#34;Registro: &#34;+nom_producto.title()
+    titulo = html.H2(titulo_label)
+    informacion_campos = [html.H3(&#39;Código CVLac: &#39;+cvlac),
+                          html.H3(&#39;Código Investigación: &#39;+cod_invest),
+                          html.H3(&#39;Número de Convocatoria: &#39;+num_convo),
+                          html.H3(&#34;Fecha de la Convocatoria: &#34;+str(fecha_conv))]
+    pais_string = &#39;&#39;
+    if isinstance(paises, int):
+        informacion_campos.append(html.H3(&#39;País &#39; + str(paises)))
+    else:
+        for i, p in enumerate(paises):
+            pais_string += str(p)
+            if i &lt; len(paises) - 1:
+                pais_string += &#39;, &#39;
+    informacion_campos.append(html.H3(&#39;Países de la convocatoria: &#39; + pais_string))
+    informacion_campos.append(html.H3(&#39;Clase de Producto: &#39; + str(clase)))
+    informacion_campos.append(html.H3(&#39;Tipo de Producto: &#39; + str(tipo)))
+    if personas is not None:
+        lista_personas = html.Ul([html.Li(str(p)) for p in personas])
+        informacion_campos.append(html.Div([html.H3(&#39;Personas:&#39;),
+                                            lista_personas]))
+    else:
+        informacion_campos.append(html.H3(&#39;Personas: None&#39;))
+
+    if instituciones is not None:
+        lista_instituciones = html.Ul([html.Li(str(p)) for p in instituciones])
+        informacion_campos.append(html.Div([html.H3(&#39;Instituciones:&#39;),
+                                            lista_instituciones]))
+    else:
+        informacion_campos.append(html.H3(&#39;Personas: None&#39;))
+
+    return html.Div(children=[titulo,
+                              html.Div(html.H3(&#39;Proyecto &#39; + str(proy_id))),
+                              html.Div(html.H3(&#39;Periodo &#39; + str(perio_id))),
+                              html.Div([html.H2(&#34;Campos de texto&#34;),
+                                        html.Div(informacion_campos)
+                                        ])
+                              ]
+                    )
+&#39;instituciones-drop-id&#39;
+@app.callback(Output(&#39;info-proyecto-id&#39;,&#39;children&#39;),
+              Input(&#39;boton-subir&#39;,&#39;n_clicks&#39;),
+              State(&#39;nom-producto-input-id&#39;,&#39;value&#39;),State(&#39;cod-cvlac-input-id&#39;,&#39;value&#39;),
+              State(&#39;cod-investigacion-input-id&#39;,&#39;value&#39;),State(&#39;num-convocatoria-input-id&#39;,&#39;value&#39;),
+              State(&#39;fecha-convocatoria-input-id&#39;,&#39;date&#39;),State(&#39;pais-drop-id&#39;,&#39;value&#39;),
+              State(&#39;clase-producto-id&#39;,&#39;value&#39;),State(&#39;tipo-producto-drop-id&#39;,&#39;value&#39;),
+              State(&#39;proyecto-drop-id&#39;,&#39;value&#39;),State(&#39;periodo-drop-id&#39;,&#39;value&#39;),
+              State(&#39;personas-drop-id&#39;,&#39;value&#39;),State(&#39;instituciones-drop-id&#39;,&#39;value&#39;),
+              State(&#39;drop-programas-proyecto-id&#39;,&#39;value&#39;),State(&#39;lineas-drop-id&#39;,&#39;value&#39;))
+def agregar_al_repo(num_clicks,nom_producto,cvlac,cod_invest,num_convocatoria,
+                    fecha_conv,paises,clase,tipo,proyecto_id,
+                    periodo_id,personas,instituciones,programas,lineas):
+    &#39;&#39;&#39;
+    Método que hace el registro en la DB de un producto combinando todos los campos de este Formulario.
+    :param num_clicks: número de clicks del botón (no se usa)
+    :param nom_producto: Nombre del producto (String)
+    :param cvlac: Código CVLac del producto (String)
+    :param cod_invest: Código del departamento de Investigación (String)
+    :param num_convocatoria: Número de la convocatoria asociada (String)
+    :param fecha_conv: Fecha de la convocatoria en formato MM-DD-YYYY
+    :param paises: lista de países asociados al producto
+    :param clase: Lista con las Clases del producto
+    :param tipo: Tipos del producto asociado
+    :param proyecto_id: ID Del proyecto en la Base de Datos
+    :param periodo_id: ID Del periodo al cual se quiere adjudicar el producto
+    :param personas: Lista con los identificadores (CC,CE, Pasaporte) De los autores que están registrados
+    en la base de datos.
+    :param instituciones: Lista de los IDs de las instituciones asociadas a este producto.
+    :param programas: Lista de los IDs de los programas académicos asociados a este producto.
+    :param lineas: Lísta con los IDs de las líneas de investigación a los cuales se enmarca este producto.
+    :return: Informe de registro como Div HTML de este producto
+    &#39;&#39;&#39;
+    #insertamos el producto en la tabla
+    prod_id = back.insertar_en_producto(nom_producto,tipo)
+    #insertamos el registro y la convocatoria y asociamos el producto con el proyecto
+    back.insertar_en_registro(prod_id,periodo_id,proyecto_id,
+                              num_convocatoria,date.today(),fecha_conv)
+    #ahora asociamos las personas con el producto
+    if isinstance(personas,str):
+        personas = [personas]
+
+    back.asociar_producto_personas(prod_id,personas)
+    if isinstance(paises,str):
+        paises =[paises]
+    #asociamos producto con paises
+    back.asociar_producto_paises(prod_id,paises)
+    if isinstance(instituciones,str):
+        instituciones = [instituciones]
+    back.asociar_producto_instituciones(prod_id,instituciones)
+    if isinstance(lineas,str):
+        lineas = [lineas]
+    back.asociar_producto_lineas(prod_id,lineas)
+    if programas is not None:
+        if isinstance(programas,str):
+            programas = [programas]
+        back.asociar_producto_programas(prod_id,programas)
+
+    return generar_informe(nom_producto,cvlac,cod_invest,
+                           num_convocatoria,fecha_conv,paises,
+                           clase,tipo,proyecto_id,periodo_id,personas,instituciones)
+
+#-----------------------------------------------------------------------------------------
+#Este es el layout de la aplicación en general
+#-----------------------------------------------------------------------------------------
+app.layout = html.Div([dcc.Store(id=&#39;store-info-proyecto&#39;),
+                       dbc.Container([html.H1(&#34;Este es el Formulario para subir Archivos&#34;),
+                                      html.Div([dbc.Row([dbc.Col(drop_proyecto, width=10),
+                                                         dbc.Col(drop_periodo, width=2)],
+                                                        no_gutters=True)]),
+                                      dbc.Row([dbc.Col(html.Div(id=&#39;texto-facultades-id&#39;),width=3),
+                                                       dbc.Col(html.Div(id=&#39;texto-escuelas-id&#39;),width=2),
+                                                       dbc.Col(html.Div(id=&#39;texto-grupos-id&#39;),width=2),
+                                                       dbc.Col(html.Div(id=&#39;texto-fechas-id&#39;),width=2),
+                                                       dbc.Col(html.Div(id=&#39;caja-programas-id&#39;,
+                                                                        children=[html.H4(&#34;Programas Académicos relacionados&#34;),
+                                                                                  programas_drop]),width=3)],
+                                                      no_gutters=True),
+                                      dbc.Row([dbc.Col(personas,width=6),
+                                             dbc.Col(areas_y_lineas,width=6)],
+                                            no_gutters=True),
+                                      dbc.Row([dbc.Col(nom_producto,width=12)],
+                                                      no_gutters=True),
+                                      dbc.Row([dbc.Col(cod_cvlac),
+                                             dbc.Col(cod_investigacion)],no_gutters=True),
+                                      dbc.Row([dbc.Col(num_convocatoria),
+                                              dbc.Col([fecha_convocatoria,pais]),
+                                              dbc.Col([clase_producto,tipo_producto])],
+                                              no_gutters=True),
+                                      dbc.Row(dbc.Col(upload_archivo,width=12),
+                                             no_gutters=True),
+                                      dbc.Row([boton_enviar_comp],no_gutters=True),
+                                      dbc.Row([html.Div(id=&#39;info-proyecto-id&#39;)],no_gutters=True)
+
+                                      ],fluid=True)],
+                      style={&#34;padding-left&#34;:&#34;0px&#34;})
+&#39;&#39;&#39;
+Layout general del Formulario. 
+&#39;&#39;&#39;
+#-----------------------------------------------------------------------------------------
+#Este es el layout de la aplicación en general
+#-----------------------------------------------------------------------------------------
+if __name__ == &#39;__main__&#39;:
+    app.run_server(debug=False,port=5080)</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-variables">Global variables</h2>
+<dl>
+<dt id="main.UPLOAD_FOLDER"><code class="name">var <span class="ident">UPLOAD_FOLDER</span></code></dt>
+<dd>
+<div class="desc"><p>Ruta actual donde se van a guardar los archivos en carpetas separadas</p></div>
+</dd>
+<dt id="main.areas_drop"><code class="name">var <span class="ident">areas_drop</span></code></dt>
+<dd>
+<div class="desc"><p>Dropdown con las áreas de investigación disponibles de toda la DB.</p></div>
+</dd>
+<dt id="main.areas_lineas_total"><code class="name">var <span class="ident">areas_lineas_total</span></code></dt>
+<dd>
+<div class="desc"><p>DataFrame con las áreas y líneas de investigación en la DB para filtrar.</p></div>
+</dd>
+<dt id="main.boton_agregar_institucion"><code class="name">var <span class="ident">boton_agregar_institucion</span></code></dt>
+<dd>
+<div class="desc"><p>Botón para agregar una nueva institución a la Base de Datos.</p></div>
+</dd>
+<dt id="main.boton_agregar_persona"><code class="name">var <span class="ident">boton_agregar_persona</span></code></dt>
+<dd>
+<div class="desc"><p>Botón que usaremos para agregar una nueva persona (Autor) a la DB.</p></div>
+</dd>
+<dt id="main.boton_enviar_comp"><code class="name">var <span class="ident">boton_enviar_comp</span></code></dt>
+<dd>
+<div class="desc"><p>botón con el cual se crea una copia del archivo en el Repositorio.</p></div>
+</dd>
+<dt id="main.campo_cedula"><code class="name">var <span class="ident">campo_cedula</span></code></dt>
+<dd>
+<div class="desc"><p>Div con el TextField para ingresar el documento de una nueva persona.
+Puede ponerse cédula, cédula de extranjería o pasaporte.</p></div>
+</dd>
+<dt id="main.campo_nom_institucion"><code class="name">var <span class="ident">campo_nom_institucion</span></code></dt>
+<dd>
+<div class="desc"><p>Div HTML con todas las instituciones para asociar a un producto.</p></div>
+</dd>
+<dt id="main.campo_nombre"><code class="name">var <span class="ident">campo_nombre</span></code></dt>
+<dd>
+<div class="desc"><p>Div HTML con el TextField para poner el nombre y apellidos de la persona
+a inscribir en la DB.</p></div>
+</dd>
+<dt id="main.campo_tipo"><code class="name">var <span class="ident">campo_tipo</span></code></dt>
+<dd>
+<div class="desc"><p>Checklist para poder agregar nuevas personas a la DB.</p></div>
+</dd>
+<dt id="main.clase_producto"><code class="name">var <span class="ident">clase_producto</span></code></dt>
+<dd>
+<div class="desc"><p>Div HTML con las clases de productos disponibles.</p></div>
+</dd>
+<dt id="main.clase_productos"><code class="name">var <span class="ident">clase_productos</span></code></dt>
+<dd>
+<div class="desc"><p>Lista de clases de producto en la DB.</p></div>
+</dd>
+<dt id="main.cod_cvlac"><code class="name">var <span class="ident">cod_cvlac</span></code></dt>
+<dd>
+<div class="desc"><p>Div HTML para poner el código CVLac del producto.</p></div>
+</dd>
+<dt id="main.cod_investigacion"><code class="name">var <span class="ident">cod_investigacion</span></code></dt>
+<dd>
+<div class="desc"><p>Div HTML para contener la caja de texto para el código que aporta el departamento de investigación.</p></div>
+</dd>
+<dt id="main.componente_campos"><code class="name">var <span class="ident">componente_campos</span></code></dt>
+<dd>
+<div class="desc"><p>Componente para poder acomodar el nombre del producto en el Formulario.</p></div>
+</dd>
+<dt id="main.control_factory"><code class="name">var <span class="ident">control_factory</span></code></dt>
+<dd>
+<div class="desc"><p>Fábrica de controladores para este Formulario</p></div>
+</dd>
+<dt id="main.drop_periodo"><code class="name">var <span class="ident">drop_periodo</span></code></dt>
+<dd>
+<div class="desc"><p>HTML Div para contener los periodos de productos a registrar.</p></div>
+</dd>
+<dt id="main.drop_periodo_drop"><code class="name">var <span class="ident">drop_periodo_drop</span></code></dt>
+<dd>
+<div class="desc"><p>Dropdown para los periodos disponibles para registrar productos</p></div>
+</dd>
+<dt id="main.drop_programa"><code class="name">var <span class="ident">drop_programa</span></code></dt>
+<dd>
+<div class="desc"><p>Un Dropdown para crear los programas académicos</p></div>
+</dd>
+<dt id="main.drop_proyecto"><code class="name">var <span class="ident">drop_proyecto</span></code></dt>
+<dd>
+<div class="desc"><p>HTML Div con los nombres de proyectos disponibles en la DB</p></div>
+</dd>
+<dt id="main.drop_proyecto_drop"><code class="name">var <span class="ident">drop_proyecto_drop</span></code></dt>
+<dd>
+<div class="desc"><p>Dropdown con los nombres de los proyectos de investigación</p></div>
+</dd>
+<dt id="main.fecha_convocatoria"><code class="name">var <span class="ident">fecha_convocatoria</span></code></dt>
+<dd>
+<div class="desc"><p>Div HTML que contiene el Calendario para poder escoger la Fecha de Convocatoria</p></div>
+</dd>
+<dt id="main.input_cod_cvlac"><code class="name">var <span class="ident">input_cod_cvlac</span></code></dt>
+<dd>
+<div class="desc"><p>TextArea para poner el código CVLac (como String)</p></div>
+</dd>
+<dt id="main.input_cod_investigacion"><code class="name">var <span class="ident">input_cod_investigacion</span></code></dt>
+<dd>
+<div class="desc"><p>TextArea del Código que pone el departamento de investigación (como String)</p></div>
+</dd>
+<dt id="main.input_nom_producto"><code class="name">var <span class="ident">input_nom_producto</span></code></dt>
+<dd>
+<div class="desc"><p>TextArea para poner el nombre del producto académico</p></div>
+</dd>
+<dt id="main.input_num_convocatoria"><code class="name">var <span class="ident">input_num_convocatoria</span></code></dt>
+<dd>
+<div class="desc"><p>TextArea para poner el número de la convocatoria a la cual pertenece el producto</p></div>
+</dd>
+<dt id="main.instis"><code class="name">var <span class="ident">instis</span></code></dt>
+<dd>
+<div class="desc"><p>Trae toda la lista de instituciones disponibles en la DB.</p></div>
+</dd>
+<dt id="main.instituciones_drop"><code class="name">var <span class="ident">instituciones_drop</span></code></dt>
+<dd>
+<div class="desc"><p>Dropdown con las instituciones disponibles en la Base de Datos</p></div>
+</dd>
+<dt id="main.lineas_drop"><code class="name">var <span class="ident">lineas_drop</span></code></dt>
+<dd>
+<div class="desc"><p>Líneas de investigación disponibles.</p></div>
+</dd>
+<dt id="main.nom_producto"><code class="name">var <span class="ident">nom_producto</span></code></dt>
+<dd>
+<div class="desc"><p>Div HTML para poner el nombre del producto</p></div>
+</dd>
+<dt id="main.nueva_persona_div"><code class="name">var <span class="ident">nueva_persona_div</span></code></dt>
+<dd>
+<div class="desc"><p>Sección del formulario (como Div HTML) dedicada a agregar una nueva persona
+a la Base de Datos.</p></div>
+</dd>
+<dt id="main.num_convocatoria"><code class="name">var <span class="ident">num_convocatoria</span></code></dt>
+<dd>
+<div class="desc"><p>Div HTML conteniendo la caja de texto para poner el número de la convocatoria.</p></div>
+</dd>
+<dt id="main.ops_tipo_persona"><code class="name">var <span class="ident">ops_tipo_persona</span></code></dt>
+<dd>
+<div class="desc"><p>Tipos de persona: Docente, Estudiante, Externo que podemos relacionar</p></div>
+</dd>
+<dt id="main.pais"><code class="name">var <span class="ident">pais</span></code></dt>
+<dd>
+<div class="desc"><p>Div HTML con el DropDown para escoger uno o más países y asociarlos al producto a
+registrar.</p></div>
+</dd>
+<dt id="main.paises"><code class="name">var <span class="ident">paises</span></code></dt>
+<dd>
+<div class="desc"><p>Lista de países registrada en la Base de Datos</p></div>
+</dd>
+<dt id="main.personas"><code class="name">var <span class="ident">personas</span></code></dt>
+<dd>
+<div class="desc"><p>Lista de todas las personas en la Base de Datos</p></div>
+</dd>
+<dt id="main.personas_drop"><code class="name">var <span class="ident">personas_drop</span></code></dt>
+<dd>
+<div class="desc"><p>Dropdown con todas las personas registradas en la Base de Datos.</p></div>
+</dd>
+<dt id="main.programas"><code class="name">var <span class="ident">programas</span></code></dt>
+<dd>
+<div class="desc"><p>Trae la lista de programas académicos registrada en la Base de Datos</p></div>
+</dd>
+<dt id="main.programas_drop"><code class="name">var <span class="ident">programas_drop</span></code></dt>
+<dd>
+<div class="desc"><p>Pone por defecto en el Dropdown TODOS los programas académicos en la DB.</p></div>
+</dd>
+<dt id="main.tipo_producto"><code class="name">var <span class="ident">tipo_producto</span></code></dt>
+<dd>
+<div class="desc"><p>Div HTML con el Dropdown de los tipos de producto disponibles (se actualizará dependiendo de la Clase).</p></div>
+</dd>
+<dt id="main.tipos_archivo_permitidos"><code class="name">var <span class="ident">tipos_archivo_permitidos</span></code></dt>
+<dd>
+<div class="desc"><p>Tipos de archivos aceptados por el momento: RAR, ZIP, DOC,DOCX,XLS,XLSX,PDF,TEX,PNG,JPG.</p></div>
+</dd>
+<dt id="main.upload_archivos_div"><code class="name">var <span class="ident">upload_archivos_div</span></code></dt>
+<dd>
+<div class="desc"><p>Div con la caja para subir uno o más archivos.</p></div>
+</dd>
+</dl>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="main.actualizar_fechas_proyecto"><code class="name flex">
+<span>def <span class="ident">actualizar_fechas_proyecto</span></span>(<span>proyecto_id)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Informa sobre las fechas de inicio y fin de un proyecto (cuando hay) asociadas a un proyecto
+de investigación seleccionado.
+:param proyecto_id: ID En la Base de Datos del proyecto de investigación.
+:return: Div HTML con la información de fechas de inicio y fin y estado del proyecto (En Curso/Finalizado).</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@app.callback(Output(&#39;texto-fechas-id&#39;,&#39;children&#39;),
+              Input(&#39;proyecto-drop-id&#39;,&#39;value&#39;))
+def actualizar_fechas_proyecto(proyecto_id):
+    &#39;&#39;&#39;
+    Informa sobre las fechas de inicio y fin de un proyecto (cuando hay) asociadas a un proyecto
+    de investigación seleccionado.
+    :param proyecto_id: ID En la Base de Datos del proyecto de investigación.
+    :return: Div HTML con la información de fechas de inicio y fin y estado del proyecto (En Curso/Finalizado).
+    &#39;&#39;&#39;
+    fecha_ini = &#39;NO SE HA ESCOGIDO&#39;
+    fecha_cie = &#39;-&#39;
+    estado = &#39;EN CURSO&#39;
+    if proyecto_id is not None:
+        fecha_ini,fecha_cierre = back.get_fechas_proyecto(proyecto_id)
+        fecha_ini = str(fecha_ini)
+        if fecha_cierre is not None:
+            fecha_cie = str(fecha_cie)
+            estado = &#39;FINALIZADO&#39;
+    inicio_fin =[html.Li(&#34;Inicio del Proyecto: &#34;+fecha_ini)]
+    inicio_fin.append(html.Li(&#34;Fin del proyecto: &#34;+fecha_cie))
+    inicio_fin.append(html.Li(&#34;Estado del proyecto: &#34;+estado))
+    return html.Div(children=[html.H4(&#34;Fechas importantes del proyecto&#34;),
+                              html.Ul(children=inicio_fin)])</code></pre>
+</details>
+</dd>
+<dt id="main.actualizar_info_escuelas"><code class="name flex">
+<span>def <span class="ident">actualizar_info_escuelas</span></span>(<span>data_json)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>ESte método actualiza la información de las escuelas relacionadas con un proyecto
+de investigación.
+:param data_json: Información de Facultades, Escuelas y programas académicos como JSON
+:return: Div HTML con la información de las escuelas asociadas a este proyecto.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@app.callback(Output(&#39;texto-escuelas-id&#39;,&#39;children&#39;),
+              Input(&#39;store-info-proyecto&#39;,&#39;data&#39;))
+def actualizar_info_escuelas(data_json):
+    &#39;&#39;&#39;
+    ESte método actualiza la información de las escuelas relacionadas con un proyecto
+    de investigación.
+    :param data_json: Información de Facultades, Escuelas y programas académicos como JSON
+    :return: Div HTML con la información de las escuelas asociadas a este proyecto.
+    &#39;&#39;&#39;
+    if data_json is None:
+        return [html.H4(&#39;Escuelas (No hay selección)&#39;)]
+    else:
+        df = pd.read_json(data_json)
+        facs = df[[&#39;escuela&#39;]].drop_duplicates()
+        lista_facs = []
+        for idx,fac in facs.iterrows():
+            fac_item = html.Li(fac[&#39;escuela&#39;])
+            lista_facs.append(fac_item)
+
+        return html.Div(children=[html.H4(&#39;Escuelas&#39;),
+                                  html.Ul(children=lista_facs)])</code></pre>
+</details>
+</dd>
+<dt id="main.actualizar_info_facultades"><code class="name flex">
+<span>def <span class="ident">actualizar_info_facultades</span></span>(<span>data_json)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Método para actualizar la lista de Facultades dependiendo del contenido del
+DataStore del proyecto
+:param data_json: Información de Facultades, Escuelas y programas académicos como JSON
+:return: Div HTML con la lista de las Facultades involucradas con un proyecto de investigación.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@app.callback(Output(&#39;texto-facultades-id&#39;,&#39;children&#39;),
+              Input(&#39;store-info-proyecto&#39;,&#39;data&#39;))
+def actualizar_info_facultades(data_json):
+    &#39;&#39;&#39;
+    Método para actualizar la lista de Facultades dependiendo del contenido del
+    DataStore del proyecto
+    :param data_json: Información de Facultades, Escuelas y programas académicos como JSON
+    :return: Div HTML con la lista de las Facultades involucradas con un proyecto de investigación.
+    &#39;&#39;&#39;
+    if data_json is None:
+        return [html.H4(&#39;Facultades (No hay selección)&#39;)]
+    else:
+        df = pd.read_json(data_json)
+        facs = df[[&#39;facultad&#39;]].drop_duplicates()
+        lista_facs = []
+        for idx,fac in facs.iterrows():
+            fac_item = html.Li(fac[&#39;facultad&#39;])
+            lista_facs.append(fac_item)
+
+        return html.Div(children=[html.H4(&#39;Facultades&#39;),
+                                  html.Ul(children=lista_facs)])</code></pre>
+</details>
+</dd>
+<dt id="main.actualizar_info_grupos"><code class="name flex">
+<span>def <span class="ident">actualizar_info_grupos</span></span>(<span>data_json)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Extrae la información de los grupos de investigación asociados a un proyecto
+desde el DataStore de Facultades, EScuelas, PRogramas y Gurpos de investigación
+:param data_json: Información de Facultades, Escuelas y programas académicos como JSON
+:return: HTML Div con la información de los Grupos de Investigación asociados a un proyecto.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@app.callback(Output(&#39;texto-grupos-id&#39;,&#39;children&#39;),
+              Input(&#39;store-info-proyecto&#39;,&#39;data&#39;))
+def actualizar_info_grupos(data_json):
+    &#39;&#39;&#39;
+    Extrae la información de los grupos de investigación asociados a un proyecto
+    desde el DataStore de Facultades, EScuelas, PRogramas y Gurpos de investigación
+    :param data_json: Información de Facultades, Escuelas y programas académicos como JSON
+    :return: HTML Div con la información de los Grupos de Investigación asociados a un proyecto.
+    &#39;&#39;&#39;
+    if data_json is None:
+        return [html.H4(&#39;Grupos (No hay selección)&#39;)]
+    else:
+        df = pd.read_json(data_json)
+        facs = df[[&#39;grupo&#39;]].drop_duplicates()
+        lista_facs = []
+        for idx,fac in facs.iterrows():
+            fac_item = html.Li(fac[&#39;grupo&#39;])
+            lista_facs.append(fac_item)
+
+        return html.Div(children=[html.H4(&#39;Grupos&#39;),
+                                  html.Ul(children=lista_facs)])</code></pre>
+</details>
+</dd>
+<dt id="main.actualizar_info_programas"><code class="name flex">
+<span>def <span class="ident">actualizar_info_programas</span></span>(<span>data_json)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Pone por defecto todos los programas académicos relacionados con el proyecto
+seleccionado como seleccionado en el Dropdown de Programas académicos.
+:param data_json: Información de Facultades, Escuelas y programas académicos como JSON
+:return: Lista con los IDs de los programas académicos relacionados con el proyecto.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@app.callback(Output(&#39;drop-programas-proyecto-id&#39;,&#39;value&#39;),
+              Input(&#39;store-info-proyecto&#39;,&#39;data&#39;))
+def actualizar_info_programas(data_json):
+    &#39;&#39;&#39;
+    Pone por defecto todos los programas académicos relacionados con el proyecto
+    seleccionado como seleccionado en el Dropdown de Programas académicos.
+    :param data_json: Información de Facultades, Escuelas y programas académicos como JSON
+    :return: Lista con los IDs de los programas académicos relacionados con el proyecto.
+    &#39;&#39;&#39;
+    if data_json is None:
+        return []
+    else:
+        df = pd.read_json(data_json)
+        escuelas = list(df[&#39;escuela_id&#39;].unique())
+        progs_seleccionados = programas.loc[programas[&#39;escuela_id&#39;].isin(escuelas)]
+        return list(progs_seleccionados[&#39;programa_academico_id&#39;].unique())</code></pre>
+</details>
+</dd>
+<dt id="main.actualizar_instituciones"><code class="name flex">
+<span>def <span class="ident">actualizar_instituciones</span></span>(<span>n_clicks)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Actualiza la lista de instituciones para poner y seleccionar la institución recién puesta
+(no funciona bien).
+:param n_clicks: Numero de clicks del botón.
+:return: Lista de diccionarios con las instituciones actualizada</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@app.callback(Output(&#39;instituciones-drop-id&#39;,&#39;options&#39;),
+              Input(&#39;agregar-institucion-boton-id&#39;, &#39;n_clicks&#39;))
+def actualizar_instituciones(n_clicks):
+    &#39;&#39;&#39;
+    Actualiza la lista de instituciones para poner y seleccionar la institución recién puesta
+    (no funciona bien).
+    :param n_clicks: Numero de clicks del botón.
+    :return: Lista de diccionarios con las instituciones actualizada
+    &#39;&#39;&#39;
+    instis = back.get_instituciones()
+    ops = []
+    for idx, insti in instis.iterrows():
+        clase_id = insti[&#39;instituciones_id&#39;]
+        clase_nombre = insti[&#39;instituciones&#39;]
+        ops.append({&#39;label&#39;: clase_nombre, &#39;value&#39;: clase_id})</code></pre>
+</details>
+</dd>
+<dt id="main.actualizar_personas_lista"><code class="name flex">
+<span>def <span class="ident">actualizar_personas_lista</span></span>(<span>n_clicks)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Método para mostrar la lista de personas de la base de datos.
+:param n_clicks: Número de clicks en el botón de agregar persona (no se usa)
+:return: Lista de diccionarios con todas las personas en la Base de Datos.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@app.callback(Output(&#39;personas-drop-id&#39;,&#39;options&#39;),
+              Input(&#39;agregar-persona-boton-id&#39;,&#39;n_clicks&#39;))
+def actualizar_personas_lista(n_clicks):
+    &#39;&#39;&#39;
+    Método para mostrar la lista de personas de la base de datos.
+    :param n_clicks: Número de clicks en el botón de agregar persona (no se usa)
+    :return: Lista de diccionarios con todas las personas en la Base de Datos.
+    &#39;&#39;&#39;
+    personas = back.get_personas()
+    ops = []
+    for idx, persona in personas.iterrows():
+        clase_id = persona[&#39;persona_id&#39;]
+        clase_nombre = persona[&#39;persona&#39;]
+        ops.append({&#39;label&#39;: clase_nombre, &#39;value&#39;: clase_id})
+    return ops</code></pre>
+</details>
+</dd>
+<dt id="main.actualizar_tipo_producto"><code class="name flex">
+<span>def <span class="ident">actualizar_tipo_producto</span></span>(<span>clase_prod)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Método para actualizar las opciones del Dropdown de Tipo de Producto dependiendo
+de la escogencia de la clase de producto.
+:param clase_prod: Clase de Producto ID.
+:return: Lista de Diccionarios para acomodar el Dropdown de Tipos de Producto.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@app.callback(Output(&#39;tipo-producto-drop-id&#39;,&#39;options&#39;),
+              Input(&#39;clase-producto-id&#39;,&#39;value&#39;))
+def actualizar_tipo_producto(clase_prod):
+    &#39;&#39;&#39;
+    Método para actualizar las opciones del Dropdown de Tipo de Producto dependiendo
+    de la escogencia de la clase de producto.
+    :param clase_prod: Clase de Producto ID.
+    :return: Lista de Diccionarios para acomodar el Dropdown de Tipos de Producto.
+    &#39;&#39;&#39;
+    if clase_prod is None:
+        return []
+    clase_productos = back.get_tipo_producto(clase_prod)
+    ops=[]
+    for idx, clase in clase_productos.iterrows():
+        clase_id = clase[&#39;tipo_producto_id&#39;]
+        clase_nombre = clase[&#39;tipo_producto&#39;]
+        ops.append({&#39;label&#39;: clase_nombre, &#39;value&#39;: clase_id})
+    return ops</code></pre>
+</details>
+</dd>
+<dt id="main.agregar_al_repo"><code class="name flex">
+<span>def <span class="ident">agregar_al_repo</span></span>(<span>num_clicks, nom_producto, cvlac, cod_invest, num_convocatoria, fecha_conv, paises, clase, tipo, proyecto_id, periodo_id, personas, instituciones, programas, lineas)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Método que hace el registro en la DB de un producto combinando todos los campos de este Formulario.
+:param num_clicks: número de clicks del botón (no se usa)
+:param nom_producto: Nombre del producto (String)
+:param cvlac: Código CVLac del producto (String)
+:param cod_invest: Código del departamento de Investigación (String)
+:param num_convocatoria: Número de la convocatoria asociada (String)
+:param fecha_conv: Fecha de la convocatoria en formato MM-DD-YYYY
+:param paises: lista de países asociados al producto
+:param clase: Lista con las Clases del producto
+:param tipo: Tipos del producto asociado
+:param proyecto_id: ID Del proyecto en la Base de Datos
+:param periodo_id: ID Del periodo al cual se quiere adjudicar el producto
+:param personas: Lista con los identificadores (CC,CE, Pasaporte) De los autores que están registrados
+en la base de datos.
+:param instituciones: Lista de los IDs de las instituciones asociadas a este producto.
+:param programas: Lista de los IDs de los programas académicos asociados a este producto.
+:param lineas: Lísta con los IDs de las líneas de investigación a los cuales se enmarca este producto.
+:return: Informe de registro como Div HTML de este producto</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@app.callback(Output(&#39;info-proyecto-id&#39;,&#39;children&#39;),
+              Input(&#39;boton-subir&#39;,&#39;n_clicks&#39;),
+              State(&#39;nom-producto-input-id&#39;,&#39;value&#39;),State(&#39;cod-cvlac-input-id&#39;,&#39;value&#39;),
+              State(&#39;cod-investigacion-input-id&#39;,&#39;value&#39;),State(&#39;num-convocatoria-input-id&#39;,&#39;value&#39;),
+              State(&#39;fecha-convocatoria-input-id&#39;,&#39;date&#39;),State(&#39;pais-drop-id&#39;,&#39;value&#39;),
+              State(&#39;clase-producto-id&#39;,&#39;value&#39;),State(&#39;tipo-producto-drop-id&#39;,&#39;value&#39;),
+              State(&#39;proyecto-drop-id&#39;,&#39;value&#39;),State(&#39;periodo-drop-id&#39;,&#39;value&#39;),
+              State(&#39;personas-drop-id&#39;,&#39;value&#39;),State(&#39;instituciones-drop-id&#39;,&#39;value&#39;),
+              State(&#39;drop-programas-proyecto-id&#39;,&#39;value&#39;),State(&#39;lineas-drop-id&#39;,&#39;value&#39;))
+def agregar_al_repo(num_clicks,nom_producto,cvlac,cod_invest,num_convocatoria,
+                    fecha_conv,paises,clase,tipo,proyecto_id,
+                    periodo_id,personas,instituciones,programas,lineas):
+    &#39;&#39;&#39;
+    Método que hace el registro en la DB de un producto combinando todos los campos de este Formulario.
+    :param num_clicks: número de clicks del botón (no se usa)
+    :param nom_producto: Nombre del producto (String)
+    :param cvlac: Código CVLac del producto (String)
+    :param cod_invest: Código del departamento de Investigación (String)
+    :param num_convocatoria: Número de la convocatoria asociada (String)
+    :param fecha_conv: Fecha de la convocatoria en formato MM-DD-YYYY
+    :param paises: lista de países asociados al producto
+    :param clase: Lista con las Clases del producto
+    :param tipo: Tipos del producto asociado
+    :param proyecto_id: ID Del proyecto en la Base de Datos
+    :param periodo_id: ID Del periodo al cual se quiere adjudicar el producto
+    :param personas: Lista con los identificadores (CC,CE, Pasaporte) De los autores que están registrados
+    en la base de datos.
+    :param instituciones: Lista de los IDs de las instituciones asociadas a este producto.
+    :param programas: Lista de los IDs de los programas académicos asociados a este producto.
+    :param lineas: Lísta con los IDs de las líneas de investigación a los cuales se enmarca este producto.
+    :return: Informe de registro como Div HTML de este producto
+    &#39;&#39;&#39;
+    #insertamos el producto en la tabla
+    prod_id = back.insertar_en_producto(nom_producto,tipo)
+    #insertamos el registro y la convocatoria y asociamos el producto con el proyecto
+    back.insertar_en_registro(prod_id,periodo_id,proyecto_id,
+                              num_convocatoria,date.today(),fecha_conv)
+    #ahora asociamos las personas con el producto
+    if isinstance(personas,str):
+        personas = [personas]
+
+    back.asociar_producto_personas(prod_id,personas)
+    if isinstance(paises,str):
+        paises =[paises]
+    #asociamos producto con paises
+    back.asociar_producto_paises(prod_id,paises)
+    if isinstance(instituciones,str):
+        instituciones = [instituciones]
+    back.asociar_producto_instituciones(prod_id,instituciones)
+    if isinstance(lineas,str):
+        lineas = [lineas]
+    back.asociar_producto_lineas(prod_id,lineas)
+    if programas is not None:
+        if isinstance(programas,str):
+            programas = [programas]
+        back.asociar_producto_programas(prod_id,programas)
+
+    return generar_informe(nom_producto,cvlac,cod_invest,
+                           num_convocatoria,fecha_conv,paises,
+                           clase,tipo,proyecto_id,periodo_id,personas,instituciones)</code></pre>
+</details>
+</dd>
+<dt id="main.agregar_nueva_institucion"><code class="name flex">
+<span>def <span class="ident">agregar_nueva_institucion</span></span>(<span>n_clicks, nom_institucion)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Acción asociada a agregar una nueva institución a la Base de Datos
+:param n_clicks: número de clicks en el botón (no se usa).
+:param nom_institucion: nombre de la institución a agregar viene de la caja de texto.
+:return: Información acerca de si se agregó la institución o no.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@app.callback(Output(&#39;institucion-agregada-id&#39;,&#39;children&#39;),
+              Input(&#39;agregar-institucion-boton-id&#39;, &#39;n_clicks&#39;),
+              State(&#39;nueva-institucion-input-id&#39;, &#39;value&#39;))
+def agregar_nueva_institucion(n_clicks,nom_institucion):
+    &#39;&#39;&#39;
+    Acción asociada a agregar una nueva institución a la Base de Datos
+    :param n_clicks: número de clicks en el botón (no se usa).
+    :param nom_institucion: nombre de la institución a agregar viene de la caja de texto.
+    :return: Información acerca de si se agregó la institución o no.
+    &#39;&#39;&#39;
+    if nom_institucion is not None:
+        back.agregar_nueva_institucion(nom_institucion.upper())
+        return &#34;Nueva institución agregada, refresque&#34;
+    else:
+        return &#34;no se ha agregado ninguna institución&#34;</code></pre>
+</details>
+</dd>
+<dt id="main.agregar_persona_boton"><code class="name flex">
+<span>def <span class="ident">agregar_persona_boton</span></span>(<span>n_clicks, persona_id, persona_nombre, tipos)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Método para agregar una nueva persona a la Base de Datos después de haber llenado los campos
+necesarios y a través del botón de agregar persona.
+:param n_clicks: Número de clicks en el botón (no es importante).
+:param persona_id: Identificador de la persona (cc,ce, pasaporte).
+:param persona_nombre: Nombres y apellidos de la persona.
+:param tipos: lista con los tipos asociados a la persona
+:return: Información de si se pudo agregar a la persona ("persona agregada") o
+si faltan campos por llenar.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@app.callback(Output(&#39;persona-agregada-id&#39;,&#39;children&#39;),
+              Input(&#39;agregar-persona-boton-id&#39;,&#39;n_clicks&#39;),
+              State(&#39;nueva-cedula-field-id&#39;,&#39;value&#39;),
+              State(&#39;nuevo-nombre-field-id&#39;,&#39;value&#39;),
+              State(&#39;tipo-nueva-persona-check-id&#39;,&#39;value&#39;))
+def agregar_persona_boton(n_clicks,persona_id,persona_nombre,tipos):
+    &#39;&#39;&#39;
+    Método para agregar una nueva persona a la Base de Datos después de haber llenado los campos
+    necesarios y a través del botón de agregar persona.
+    :param n_clicks: Número de clicks en el botón (no es importante).
+    :param persona_id: Identificador de la persona (cc,ce, pasaporte).
+    :param persona_nombre: Nombres y apellidos de la persona.
+    :param tipos: lista con los tipos asociados a la persona
+    :return: Información de si se pudo agregar a la persona (&#34;persona agregada&#34;) o
+    si faltan campos por llenar.
+    &#39;&#39;&#39;
+    if persona_id is not None and persona_nombre is not None and tipos is not None:
+        if len(tipos)==0:
+            return &#34;falta poner por lo menos un tipo de persona&#34;
+        else:
+            persona_nombre = persona_nombre.upper()
+            back.agregar_persona(persona_id,persona_nombre,tipos)
+            return &#34;persona agregada&#34;
+    else:
+        return &#34;Faltan campos por llenar&#34;</code></pre>
+</details>
+</dd>
+<dt id="main.agregar_persona_lista"><code class="name flex">
+<span>def <span class="ident">agregar_persona_lista</span></span>(<span>n_clicks, persona_id, persona_nombre, personas_selec)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Este método agrega la nueva persona a la lista de personas y a los seleccionados por defecto.
+(No está funcionando muy bien en este momento).
+:param n_clicks: Numero de clicks en el botón de agregar persona.
+:param persona_id: identificador de la persona (cc,ce, pasaporte) de la persona en la DB.
+:param persona_nombre: nombre de la persona para mostrar en la selección.
+:param personas_selec: selección actual en la caja de de personas.
+:return: Lista de identificadores de las personas con la nueva persona agregada.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@app.callback(Output(&#39;personas-drop-id&#39;,&#39;value&#39;),
+              Input(&#39;agregar-persona-boton-id&#39;,&#39;n_clicks&#39;),
+              State(&#39;nueva-cedula-field-id&#39;,&#39;value&#39;),
+              State(&#39;nuevo-nombre-field-id&#39;,&#39;value&#39;),
+              State(&#39;personas-drop-id&#39;,&#39;value&#39;))
+def agregar_persona_lista(n_clicks,persona_id,persona_nombre,personas_selec):
+    &#39;&#39;&#39;
+    Este método agrega la nueva persona a la lista de personas y a los seleccionados por defecto.
+    (No está funcionando muy bien en este momento).
+    :param n_clicks: Numero de clicks en el botón de agregar persona.
+    :param persona_id: identificador de la persona (cc,ce, pasaporte) de la persona en la DB.
+    :param persona_nombre: nombre de la persona para mostrar en la selección.
+    :param personas_selec: selección actual en la caja de de personas.
+    :return: Lista de identificadores de las personas con la nueva persona agregada.
+    &#39;&#39;&#39;
+    if personas_selec is None:
+        return [{&#34;label&#34;:persona_id,&#39;value&#39;:persona_id}]
+    else:
+        nuevas = personas_selec.append({&#34;label&#34;:persona,&#39;value&#39;:persona_id})
+        return nuevas</code></pre>
+</details>
+</dd>
+<dt id="main.generar_informe"><code class="name flex">
+<span>def <span class="ident">generar_informe</span></span>(<span>nom_producto, cvlac, cod_invest, num_convo, fecha_conv, paises, clase, tipo, proy_id, perio_id, personas, instituciones)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Método para generar un reporte del registro de productos para mostrar al usuario.
+:param nom_producto: Nombre del PRoducto (String)
+:param cvlac: Código CVLac del producto (String)
+:param cod_invest: Código del Departamento de Investigación (String)
+:param num_convo: Número de la Convocatoria del producto (String)
+:param fecha_conv: Fecha registrada de la convocatoria (Date)
+:param paises: Lista de los IDs de los países al cual queremos asociar este producto
+:param clase: ID de la clase de producto
+:param tipo: IDs de los tipos de producto asociados
+:param proy_id: ID Del proyecto de Investigación.
+:param perio_id: ID Del periodo al cual queremos registrar este producto
+:param personas: Lista con los IDs (Documentos de identidad) de los autores
+:param instituciones: Lista de los IDs de las institucioens asociadas.
+:return: Div HTML con el reporte de la información del registro.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def generar_informe(nom_producto,cvlac,cod_invest,
+                    num_convo,fecha_conv,paises,
+                    clase,tipo,proy_id,perio_id,personas,instituciones):
+    &#39;&#39;&#39;
+    Método para generar un reporte del registro de productos para mostrar al usuario.
+    :param nom_producto: Nombre del PRoducto (String)
+    :param cvlac: Código CVLac del producto (String)
+    :param cod_invest: Código del Departamento de Investigación (String)
+    :param num_convo: Número de la Convocatoria del producto (String)
+    :param fecha_conv: Fecha registrada de la convocatoria (Date)
+    :param paises: Lista de los IDs de los países al cual queremos asociar este producto
+    :param clase: ID de la clase de producto
+    :param tipo: IDs de los tipos de producto asociados
+    :param proy_id: ID Del proyecto de Investigación.
+    :param perio_id: ID Del periodo al cual queremos registrar este producto
+    :param personas: Lista con los IDs (Documentos de identidad) de los autores
+    :param instituciones: Lista de los IDs de las institucioens asociadas.
+    :return: Div HTML con el reporte de la información del registro.
+    &#39;&#39;&#39;
+    titulo_label = &#34;Registro: &#34;+nom_producto.title()
+    titulo = html.H2(titulo_label)
+    informacion_campos = [html.H3(&#39;Código CVLac: &#39;+cvlac),
+                          html.H3(&#39;Código Investigación: &#39;+cod_invest),
+                          html.H3(&#39;Número de Convocatoria: &#39;+num_convo),
+                          html.H3(&#34;Fecha de la Convocatoria: &#34;+str(fecha_conv))]
+    pais_string = &#39;&#39;
+    if isinstance(paises, int):
+        informacion_campos.append(html.H3(&#39;País &#39; + str(paises)))
+    else:
+        for i, p in enumerate(paises):
+            pais_string += str(p)
+            if i &lt; len(paises) - 1:
+                pais_string += &#39;, &#39;
+    informacion_campos.append(html.H3(&#39;Países de la convocatoria: &#39; + pais_string))
+    informacion_campos.append(html.H3(&#39;Clase de Producto: &#39; + str(clase)))
+    informacion_campos.append(html.H3(&#39;Tipo de Producto: &#39; + str(tipo)))
+    if personas is not None:
+        lista_personas = html.Ul([html.Li(str(p)) for p in personas])
+        informacion_campos.append(html.Div([html.H3(&#39;Personas:&#39;),
+                                            lista_personas]))
+    else:
+        informacion_campos.append(html.H3(&#39;Personas: None&#39;))
+
+    if instituciones is not None:
+        lista_instituciones = html.Ul([html.Li(str(p)) for p in instituciones])
+        informacion_campos.append(html.Div([html.H3(&#39;Instituciones:&#39;),
+                                            lista_instituciones]))
+    else:
+        informacion_campos.append(html.H3(&#39;Personas: None&#39;))
+
+    return html.Div(children=[titulo,
+                              html.Div(html.H3(&#39;Proyecto &#39; + str(proy_id))),
+                              html.Div(html.H3(&#39;Periodo &#39; + str(perio_id))),
+                              html.Div([html.H2(&#34;Campos de texto&#34;),
+                                        html.Div(informacion_campos)
+                                        ])
+                              ]
+                    )</code></pre>
+</details>
+</dd>
+<dt id="main.get_info_proyecto"><code class="name flex">
+<span>def <span class="ident">get_info_proyecto</span></span>(<span>proyecto_id)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Callback para traer la información asociada a un proyecto: Facultades, EScuelas y programas académicos
+relacionados con él.
+:param proyecto_id: ID Del proyecto en la Base de Datos
+:return: Tabla de la Base de Datos en Formato JSON (orientada a registros)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@app.callback(Output(&#39;store-info-proyecto&#39;,&#39;data&#39;),
+              Input(&#39;proyecto-drop-id&#39;,&#39;value&#39;))
+def get_info_proyecto(proyecto_id):
+    &#39;&#39;&#39;
+    Callback para traer la información asociada a un proyecto: Facultades, EScuelas y programas académicos
+    relacionados con él.
+    :param proyecto_id: ID Del proyecto en la Base de Datos
+    :return: Tabla de la Base de Datos en Formato JSON (orientada a registros)
+    &#39;&#39;&#39;
+    if proyecto_id is not None:
+        query = query_grps_esc_facs_proy_id.replace(&#39;&lt;proy_id&gt;&#39;,str(proyecto_id))
+        df = back.hacer_query(query)
+        return df.to_json(orient=&#39;records&#39;)</code></pre>
+</details>
+</dd>
+<dt id="main.imprimir_confirmacion"><code class="name flex">
+<span>def <span class="ident">imprimir_confirmacion</span></span>(<span>completo, nom_archivos)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Imprime la confirmación de los archivos subidos al repo.
+:param completo: Informa si ya se completó el upload.
+:param nom_archivos: lista con los nombres de los archivos subidos.
+:return: Div HTML con la información de los archivos subidos y su ubicación.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@app.callback(Output(&#39;confirmacion-dialogo-id&#39;,&#39;children&#39;),
+              Input(&#39;upload-data-id&#39;,&#39;isCompleted&#39;),
+              State(&#39;upload-data-id&#39;,&#39;fileNames&#39;))
+def imprimir_confirmacion(completo,nom_archivos):
+    &#39;&#39;&#39;
+    Imprime la confirmación de los archivos subidos al repo.
+    :param completo: Informa si ya se completó el upload.
+    :param nom_archivos: lista con los nombres de los archivos subidos.
+    :return: Div HTML con la información de los archivos subidos y su ubicación.
+    &#39;&#39;&#39;
+    if nom_archivos is not None:
+        out = []
+        for archivo in nom_archivos:
+            #file = Path(UPLOAD_FOLDER) / archivo
+            out.append(archivo)
+        return html.Ul([html.Li(str(x)) for x in out])
+    else:
+        return html.Ul(html.Li(&#34;Ningún archivo para subir!&#34;))</code></pre>
+</details>
+</dd>
+<dt id="main.poner_periodo_actual"><code class="name flex">
+<span>def <span class="ident">poner_periodo_actual</span></span>(<span>proyecto_id)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Actualiza la fecha del periodo para poner por defecto el periodo actual
+dependiendo de la fecha en curso.
+:param proyecto_id: ID del proyecto en el Formulario
+:return: ID Del periodo actual.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@app.callback(Output(&#39;periodo-drop-id&#39;,&#39;value&#39;),
+              Input(&#39;proyecto-drop-id&#39;,&#39;value&#39;))
+def poner_periodo_actual(proyecto_id):
+    &#39;&#39;&#39;
+    Actualiza la fecha del periodo para poner por defecto el periodo actual
+    dependiendo de la fecha en curso.
+    :param proyecto_id: ID del proyecto en el Formulario
+    :return: ID Del periodo actual.
+    &#39;&#39;&#39;
+    per_actual = back.get_periodo_actual_id()
+    return per_actual</code></pre>
+</details>
+</dd>
+<dt id="main.print_listado_como_string"><code class="name flex">
+<span>def <span class="ident">print_listado_como_string</span></span>(<span>valores)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Un método auxiliar para escribir una lista como una serie de strings separados por comas.
+:param valores: (Lista) valores que queremos escribir como cadena de string separados por coma.
+:return: (String) valores de la lista separados por comas.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def print_listado_como_string(valores):
+    &#39;&#39;&#39;
+    Un método auxiliar para escribir una lista como una serie de strings separados por comas.
+    :param valores: (Lista) valores que queremos escribir como cadena de string separados por coma.
+    :return: (String) valores de la lista separados por comas.
+    &#39;&#39;&#39;
+    info = &#39;&#39;
+    for i,val in enumerate(valores):
+        info += val
+        if i &lt; len(valores)-1:
+            info +=&#39;,&#39;
+
+    return info</code></pre>
+</details>
+</dd>
+<dt id="main.set_areas_proyecto_drop"><code class="name flex">
+<span>def <span class="ident">set_areas_proyecto_drop</span></span>(<span>proyecto_id)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Ajusta las áreas de investigación de los grupos a los cuales pertenece el proyecto.
+:param proyecto_id: ID del proyecto.
+:return: Lista de Diccionarios con las áreas asociadas a un proyecto de investigación.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@app.callback(Output(&#39;areas-drop-id&#39;,&#39;options&#39;),
+              Input(&#39;proyecto-drop-id&#39;,&#39;value&#39;))
+def set_areas_proyecto_drop(proyecto_id):
+    &#39;&#39;&#39;
+    Ajusta las áreas de investigación de los grupos a los cuales pertenece el proyecto.
+    :param proyecto_id: ID del proyecto.
+    :return: Lista de Diccionarios con las áreas asociadas a un proyecto de investigación.
+    &#39;&#39;&#39;
+    if proyecto_id is not None:
+        areas_y_lineas = back.get_lineas_y_areas_de_proyecto(proyecto_id)
+        areas = areas_y_lineas[[&#39;area_id&#39;,&#39;area&#39;]].drop_duplicates()
+        ops = []
+        for idx, area in areas.iterrows():
+            clase_id = area[&#39;area_id&#39;]
+            clase_nombre = area[&#39;area&#39;]
+            ops.append({&#39;label&#39;: clase_nombre, &#39;value&#39;: clase_id})
+        return ops
+    else:
+        return ops_areas</code></pre>
+</details>
+</dd>
+<dt id="main.set_lineas_proyecto_drop"><code class="name flex">
+<span>def <span class="ident">set_lineas_proyecto_drop</span></span>(<span>proyecto_id, areas)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Ajusta las opciones del Dropdown con las líneas de investigación asociadas a un proyecto
+dependiendo de las áreas escogidas.
+:param proyecto_id: ID del proyecto en curso.
+:param areas: lista con los IDs de las áreas de investigación.
+:return: Lista de Diccionarios con las opciones de las líneas de investigación de las áreas asociadas
+al proyecto con ID proyecto_id.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@app.callback(Output(&#39;lineas-drop-id&#39;,&#39;options&#39;),
+              Input(&#39;proyecto-drop-id&#39;,&#39;value&#39;),
+              Input(&#39;areas-drop-id&#39;,&#39;value&#39;))
+def set_lineas_proyecto_drop(proyecto_id,areas):
+    &#39;&#39;&#39;
+    Ajusta las opciones del Dropdown con las líneas de investigación asociadas a un proyecto
+    dependiendo de las áreas escogidas.
+    :param proyecto_id: ID del proyecto en curso.
+    :param areas: lista con los IDs de las áreas de investigación.
+    :return: Lista de Diccionarios con las opciones de las líneas de investigación de las áreas asociadas
+    al proyecto con ID proyecto_id.
+    &#39;&#39;&#39;
+    if proyecto_id is None and areas is None:
+        return ops_lineas
+    elif areas is not None and proyecto_id is None:
+        sub_lineas = areas_lineas_total.loc[areas_lineas_total[&#39;area_id&#39;].isin(areas)]
+        ops_sub_lineas = []
+        for idx, linea in sub_lineas.iterrows():
+            clase_id = linea[&#39;linea_id&#39;]
+            clase_nombre = linea[&#39;linea&#39;]
+            ops_sub_lineas.append({&#39;label&#39;: clase_nombre, &#39;value&#39;: clase_id})
+        return ops_sub_lineas
+    else:
+        areas_y_lineas = back.get_lineas_y_areas_de_proyecto(proyecto_id)
+        lineas = areas_y_lineas[[&#39;linea_id&#39;, &#39;linea&#39;]].drop_duplicates()
+        ops = []
+        for idx, linea in lineas.iterrows():
+            clase_id = linea[&#39;linea_id&#39;]
+            clase_nombre = linea[&#39;linea&#39;]
+            ops.append({&#39;label&#39;: clase_nombre, &#39;value&#39;: clase_id})
+        return ops
+
+    if proyecto_id is not None and areas is not None:
+        areas_y_lineas = back.get_lineas_y_areas_de_proyecto(proyecto_id)
+        areas = areas_y_lineas[[&#39;area_id&#39;,&#39;area&#39;]]
+        lineas = areas_y_lineas[[&#39;linea_id&#39;,&#39;linea&#39;,&#39;area_id&#39;]].drop_duplicates()
+        ops = []
+        for idx, linea in lineas.iterrows():
+            clase_id = linea[&#39;linea_id&#39;]
+            clase_nombre = linea[&#39;linea&#39;]
+            area_id = linea[&#39;area_id&#39;]
+            if area_id in areas:
+                ops.append({&#39;label&#39;: clase_nombre, &#39;value&#39;: clase_id})
+        return ops</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-variables">Global variables</a></h3>
+<ul class="">
+<li><code><a title="main.UPLOAD_FOLDER" href="#main.UPLOAD_FOLDER">UPLOAD_FOLDER</a></code></li>
+<li><code><a title="main.areas_drop" href="#main.areas_drop">areas_drop</a></code></li>
+<li><code><a title="main.areas_lineas_total" href="#main.areas_lineas_total">areas_lineas_total</a></code></li>
+<li><code><a title="main.boton_agregar_institucion" href="#main.boton_agregar_institucion">boton_agregar_institucion</a></code></li>
+<li><code><a title="main.boton_agregar_persona" href="#main.boton_agregar_persona">boton_agregar_persona</a></code></li>
+<li><code><a title="main.boton_enviar_comp" href="#main.boton_enviar_comp">boton_enviar_comp</a></code></li>
+<li><code><a title="main.campo_cedula" href="#main.campo_cedula">campo_cedula</a></code></li>
+<li><code><a title="main.campo_nom_institucion" href="#main.campo_nom_institucion">campo_nom_institucion</a></code></li>
+<li><code><a title="main.campo_nombre" href="#main.campo_nombre">campo_nombre</a></code></li>
+<li><code><a title="main.campo_tipo" href="#main.campo_tipo">campo_tipo</a></code></li>
+<li><code><a title="main.clase_producto" href="#main.clase_producto">clase_producto</a></code></li>
+<li><code><a title="main.clase_productos" href="#main.clase_productos">clase_productos</a></code></li>
+<li><code><a title="main.cod_cvlac" href="#main.cod_cvlac">cod_cvlac</a></code></li>
+<li><code><a title="main.cod_investigacion" href="#main.cod_investigacion">cod_investigacion</a></code></li>
+<li><code><a title="main.componente_campos" href="#main.componente_campos">componente_campos</a></code></li>
+<li><code><a title="main.control_factory" href="#main.control_factory">control_factory</a></code></li>
+<li><code><a title="main.drop_periodo" href="#main.drop_periodo">drop_periodo</a></code></li>
+<li><code><a title="main.drop_periodo_drop" href="#main.drop_periodo_drop">drop_periodo_drop</a></code></li>
+<li><code><a title="main.drop_programa" href="#main.drop_programa">drop_programa</a></code></li>
+<li><code><a title="main.drop_proyecto" href="#main.drop_proyecto">drop_proyecto</a></code></li>
+<li><code><a title="main.drop_proyecto_drop" href="#main.drop_proyecto_drop">drop_proyecto_drop</a></code></li>
+<li><code><a title="main.fecha_convocatoria" href="#main.fecha_convocatoria">fecha_convocatoria</a></code></li>
+<li><code><a title="main.input_cod_cvlac" href="#main.input_cod_cvlac">input_cod_cvlac</a></code></li>
+<li><code><a title="main.input_cod_investigacion" href="#main.input_cod_investigacion">input_cod_investigacion</a></code></li>
+<li><code><a title="main.input_nom_producto" href="#main.input_nom_producto">input_nom_producto</a></code></li>
+<li><code><a title="main.input_num_convocatoria" href="#main.input_num_convocatoria">input_num_convocatoria</a></code></li>
+<li><code><a title="main.instis" href="#main.instis">instis</a></code></li>
+<li><code><a title="main.instituciones_drop" href="#main.instituciones_drop">instituciones_drop</a></code></li>
+<li><code><a title="main.lineas_drop" href="#main.lineas_drop">lineas_drop</a></code></li>
+<li><code><a title="main.nom_producto" href="#main.nom_producto">nom_producto</a></code></li>
+<li><code><a title="main.nueva_persona_div" href="#main.nueva_persona_div">nueva_persona_div</a></code></li>
+<li><code><a title="main.num_convocatoria" href="#main.num_convocatoria">num_convocatoria</a></code></li>
+<li><code><a title="main.ops_tipo_persona" href="#main.ops_tipo_persona">ops_tipo_persona</a></code></li>
+<li><code><a title="main.pais" href="#main.pais">pais</a></code></li>
+<li><code><a title="main.paises" href="#main.paises">paises</a></code></li>
+<li><code><a title="main.personas" href="#main.personas">personas</a></code></li>
+<li><code><a title="main.personas_drop" href="#main.personas_drop">personas_drop</a></code></li>
+<li><code><a title="main.programas" href="#main.programas">programas</a></code></li>
+<li><code><a title="main.programas_drop" href="#main.programas_drop">programas_drop</a></code></li>
+<li><code><a title="main.tipo_producto" href="#main.tipo_producto">tipo_producto</a></code></li>
+<li><code><a title="main.tipos_archivo_permitidos" href="#main.tipos_archivo_permitidos">tipos_archivo_permitidos</a></code></li>
+<li><code><a title="main.upload_archivos_div" href="#main.upload_archivos_div">upload_archivos_div</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="">
+<li><code><a title="main.actualizar_fechas_proyecto" href="#main.actualizar_fechas_proyecto">actualizar_fechas_proyecto</a></code></li>
+<li><code><a title="main.actualizar_info_escuelas" href="#main.actualizar_info_escuelas">actualizar_info_escuelas</a></code></li>
+<li><code><a title="main.actualizar_info_facultades" href="#main.actualizar_info_facultades">actualizar_info_facultades</a></code></li>
+<li><code><a title="main.actualizar_info_grupos" href="#main.actualizar_info_grupos">actualizar_info_grupos</a></code></li>
+<li><code><a title="main.actualizar_info_programas" href="#main.actualizar_info_programas">actualizar_info_programas</a></code></li>
+<li><code><a title="main.actualizar_instituciones" href="#main.actualizar_instituciones">actualizar_instituciones</a></code></li>
+<li><code><a title="main.actualizar_personas_lista" href="#main.actualizar_personas_lista">actualizar_personas_lista</a></code></li>
+<li><code><a title="main.actualizar_tipo_producto" href="#main.actualizar_tipo_producto">actualizar_tipo_producto</a></code></li>
+<li><code><a title="main.agregar_al_repo" href="#main.agregar_al_repo">agregar_al_repo</a></code></li>
+<li><code><a title="main.agregar_nueva_institucion" href="#main.agregar_nueva_institucion">agregar_nueva_institucion</a></code></li>
+<li><code><a title="main.agregar_persona_boton" href="#main.agregar_persona_boton">agregar_persona_boton</a></code></li>
+<li><code><a title="main.agregar_persona_lista" href="#main.agregar_persona_lista">agregar_persona_lista</a></code></li>
+<li><code><a title="main.generar_informe" href="#main.generar_informe">generar_informe</a></code></li>
+<li><code><a title="main.get_info_proyecto" href="#main.get_info_proyecto">get_info_proyecto</a></code></li>
+<li><code><a title="main.imprimir_confirmacion" href="#main.imprimir_confirmacion">imprimir_confirmacion</a></code></li>
+<li><code><a title="main.poner_periodo_actual" href="#main.poner_periodo_actual">poner_periodo_actual</a></code></li>
+<li><code><a title="main.print_listado_como_string" href="#main.print_listado_como_string">print_listado_como_string</a></code></li>
+<li><code><a title="main.set_areas_proyecto_drop" href="#main.set_areas_proyecto_drop">set_areas_proyecto_drop</a></code></li>
+<li><code><a title="main.set_lineas_proyecto_drop" href="#main.set_lineas_proyecto_drop">set_lineas_proyecto_drop</a></code></li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.9.2</a>.</p>
+</footer>
+</body>
+</html>
